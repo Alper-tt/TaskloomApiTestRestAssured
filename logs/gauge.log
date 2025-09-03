@@ -1012,3 +1012,383 @@ Total time taken: 1.453s
 02-09-2025 15:51:05.774 [Gauge] [INFO] Scenarios:	9 executed	9 passed	0 failed	0 skipped
 02-09-2025 15:51:05.774 [Gauge] [INFO] 
 Total time taken: 873ms
+03-09-2025 10:24:43.162 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/alper/Desktop/taskloom/taskloom-api-test/.gauge/screenshots
+03-09-2025 10:24:43.174 [Gauge] [DEBUG] Plugin html-report is already installed.
+03-09-2025 10:24:43.176 [Gauge] [DEBUG] Plugin xml-report is already installed.
+03-09-2025 10:24:43.176 [Gauge] [DEBUG] Plugin java is already installed.
+03-09-2025 10:24:43.177 [Gauge] [DEBUG] Parsing started.
+03-09-2025 10:24:43.177 [Gauge] [DEBUG] Started concepts parsing.
+03-09-2025 10:24:43.179 [Gauge] [DEBUG] 0 concepts parsing completed.
+03-09-2025 10:24:43.179 [Gauge] [DEBUG] Started specifications parsing.
+03-09-2025 10:24:43.185 [Gauge] [DEBUG] 1 specifications parsing completed.
+03-09-2025 10:24:43.185 [Gauge] [DEBUG] Parsing completed.
+03-09-2025 10:24:43.210 [java] [DEBUG] ***** Printing Properties/Env Values *****
+03-09-2025 10:24:43.210 [java] [DEBUG] PATH: /Users/alper/.nvm/versions/node/v22.18.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/alper/.local/bin:/Users/alper/.gauge/plugins/screenshot/0.3.2
+03-09-2025 10:24:43.210 [java] [DEBUG] JAVA_HOME: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_project_root: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_parallel_streams_count: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_reports_dir: reports
+03-09-2025 10:24:43.210 [java] [DEBUG] overwrite_reports: true
+03-09-2025 10:24:43.210 [java] [DEBUG] logs_directory: logs
+03-09-2025 10:24:43.210 [java] [DEBUG] enable_multithreading: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_specs_dir: specs
+03-09-2025 10:24:43.210 [java] [DEBUG] csv_delimiter: ,
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_java_home: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_custom_build_path: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_additional_libs: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_jvm_args: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_custom_compile_dir: 
+03-09-2025 10:24:43.210 [java] [DEBUG] gauge_clear_state_level: 
+03-09-2025 10:24:43.210 [java] [DEBUG] ***** END *****
+03-09-2025 10:24:44.107 [java] [ERROR] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+03-09-2025 10:24:44.107 [java] [ERROR] WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+03-09-2025 10:24:44.107 [java] [ERROR] WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+03-09-2025 10:24:44.108 [java] [ERROR] WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+03-09-2025 10:24:44.132 [Gauge] [DEBUG] Checking updates...
+03-09-2025 10:24:44.132 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:24:44.345 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/java?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:24:44.398 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:24:44.445 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/xml-report?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:24:44.834 [java] [DEBUG] classpath set to /Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.base:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.compiler:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.datatransfer:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.desktop:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.instrument:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.logging:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.management:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.management.rmi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.naming:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.net.http:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.prefs:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.rmi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.scripting:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.se:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.security.jgss:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.security.sasl:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.smartcardio:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.sql:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.sql.rowset:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.transaction.xa:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.xml:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.xml.crypto:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.accessibility:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.attach:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.charsets:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.compiler:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.crypto.cryptoki:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.crypto.ec:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.dynalink:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.editpad:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.graal.compiler:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.graal.compiler.management:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.hotspot.agent:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.httpserver:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.incubator.vector:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.ed:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.jvmstat:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.le:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.md:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.opt:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.vm.ci:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jartool:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.javadoc:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jcmd:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jconsole:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jdeps:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jdi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jdwp.agent:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jfr:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jlink:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jpackage:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jshell:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jsobject:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jstatd:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.localedata:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.management:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.management.agent:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.management.jfr:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.naming.dns:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.naming.rmi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.net:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.nio.mapmode:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.sctp:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.security.auth:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.security.jgss:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.unsupported:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.unsupported.desktop:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.xml.dom:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.zipfs:/Users/alper/Desktop/taskloom/taskloom-api-test/target/test-classes:/Users/alper/Desktop/taskloom/taskloom-api-test/target/classes:/Users/alper/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/alper/.m2/repository/com/thoughtworks/gauge/gauge-java/0.12.0/gauge-java-0.12.0.jar:/Users/alper/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/Users/alper/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/alper/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/Users/alper/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/Users/alper/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alper/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/alper/.m2/repository/com/github/javaparser/javaparser-core/3.26.4/javaparser-core-3.26.4.jar:/Users/alper/.m2/repository/org/json/json/20250107/json-20250107.jar:/Users/alper/.m2/repository/com/google/protobuf/protobuf-java/4.30.2/protobuf-java-4.30.2.jar:/Users/alper/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/alper/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/alper/.m2/repository/io/grpc/grpc-api/1.72.0/grpc-api-1.72.0.jar:/Users/alper/.m2/repository/com/google/errorprone/error_prone_annotations/2.30.0/error_prone_annotations-2.30.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-netty-shaded/1.72.0/grpc-netty-shaded-1.72.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-util/1.72.0/grpc-util-1.72.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-core/1.72.0/grpc-core-1.72.0.jar:/Users/alper/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/alper/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/Users/alper/.m2/repository/io/grpc/grpc-context/1.72.0/grpc-context-1.72.0.jar:/Users/alper/.m2/repository/io/perfmark/perfmark-api/0.27.0/perfmark-api-0.27.0.jar:/Users/alper/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.24/animal-sniffer-annotations-1.24.jar:/Users/alper/.m2/repository/io/grpc/grpc-protobuf/1.72.0/grpc-protobuf-1.72.0.jar:/Users/alper/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.51.0/proto-google-common-protos-2.51.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-protobuf-lite/1.72.0/grpc-protobuf-lite-1.72.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-stub/1.72.0/grpc-stub-1.72.0.jar:/Users/alper/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.13.4/junit-jupiter-api-5.13.4.jar:/Users/alper/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/alper/.m2/repository/org/junit/platform/junit-platform-commons/1.13.4/junit-platform-commons-1.13.4.jar:/Users/alper/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/alper/.m2/repository/io/rest-assured/rest-assured/5.5.6/rest-assured-5.5.6.jar:/Users/alper/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/alper/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/alper/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/alper/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/alper/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alper/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/alper/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/alper/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/alper/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/alper/.m2/repository/io/rest-assured/json-path/5.5.6/json-path-5.5.6.jar:/Users/alper/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/alper/.m2/repository/io/rest-assured/rest-assured-common/5.5.6/rest-assured-common-5.5.6.jar:/Users/alper/.m2/repository/io/rest-assured/xml-path/5.5.6/xml-path-5.5.6.jar:/Users/alper/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/alper/.m2/repository/io/rest-assured/json-schema-validator/5.5.6/json-schema-validator-5.5.6.jar:/Users/alper/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/alper/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/alper/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/alper/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/alper/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/alper/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/alper/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/alper/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/alper/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/alper/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/alper/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/alper/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/alper/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/alper/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/alper/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/alper/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.13.4/junit-jupiter-engine-5.13.4.jar:/Users/alper/.m2/repository/org/junit/platform/junit-platform-engine/1.13.4/junit-platform-engine-1.13.4.jar
+03-09-2025 10:24:44.834 [java] [DEBUG] found java executable in java
+03-09-2025 10:24:44.835 [java] [DEBUG] running - java [-Dfile.encoding=UTF-8 com.thoughtworks.gauge.GaugeRuntime --start]
+03-09-2025 10:24:44.835 [java] [DEBUG] stdout/stderr is logged to logs/77554-java.out
+03-09-2025 10:24:44.891 [java] [DEBUG] multithreading is set to false
+03-09-2025 10:24:45.063 [java] [DEBUG] Using reflection to scan dependencies for gauge implementations...
+03-09-2025 10:24:45.080 [java] [ERROR] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+03-09-2025 10:24:45.080 [java] [ERROR] SLF4J: Defaulting to no-operation (NOP) logger implementation
+03-09-2025 10:24:45.080 [java] [ERROR] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+03-09-2025 10:24:45.095 [java] [ERROR] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+03-09-2025 10:24:45.096 [java] [ERROR] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (file:/Users/alper/.m2/repository/io/grpc/grpc-netty-shaded/1.72.0/grpc-netty-shaded-1.72.0.jar)
+03-09-2025 10:24:45.096 [java] [ERROR] WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+03-09-2025 10:24:45.096 [java] [ERROR] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+03-09-2025 10:24:45.257 [java] [DEBUG] gauge-java took 365milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value.
+03-09-2025 10:24:45.257 [java] [DEBUG] run 'gauge config runner_connection_timeout' and verify that it is < 365
+03-09-2025 10:24:45.257 [java] [DEBUG] starting gRPC server...
+03-09-2025 10:24:45.365 [java] [DEBUG] started gRPC server on port 60760
+03-09-2025 10:24:45.365 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60760
+03-09-2025 10:24:45.366 [Gauge] [DEBUG] Successfully made the connection with runner with port: 60760
+03-09-2025 10:24:45.366 [Gauge] [DEBUG] Validation started.
+03-09-2025 10:24:46.002 [java] [DEBUG] Scanning packages for steps
+03-09-2025 10:24:46.005 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.createTask' and 'taskloom.steps.StepImplementation.createTask'
+03-09-2025 10:24:46.005 [java] [DEBUG] Found Create task that {} in current project scope.
+03-09-2025 10:24:46.005 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.checkStatusCode' and 'taskloom.steps.StepImplementation.checkStatusCode'
+03-09-2025 10:24:46.005 [java] [DEBUG] Found Response status code should be {} in current project scope.
+03-09-2025 10:24:46.005 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.checkField' and 'taskloom.steps.StepImplementation.checkField'
+03-09-2025 10:24:46.005 [java] [DEBUG] Found Task {} should be {} in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.deleteTask' and 'taskloom.steps.StepImplementation.deleteTask'
+03-09-2025 10:24:46.006 [java] [DEBUG] Found Delete task by id {} in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.updateTask' and 'taskloom.steps.StepImplementation.updateTask'
+03-09-2025 10:24:46.006 [java] [DEBUG] Found Update task that {} in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.changeTaskStatusById' and 'taskloom.steps.StepImplementation.changeTaskStatusById'
+03-09-2025 10:24:46.006 [java] [DEBUG] Found Patch task by id {} in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.getAllTasks' and 'taskloom.steps.StepImplementation.getAllTasks'
+03-09-2025 10:24:46.006 [java] [DEBUG] Found Get all tasks in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.checkResponseType' and 'taskloom.steps.StepImplementation.checkResponseType'
+03-09-2025 10:24:46.006 [java] [DEBUG] Found Response type should be {} in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.getTaskById' and 'taskloom.steps.StepImplementation.getTaskById'
+03-09-2025 10:24:46.006 [java] [DEBUG] Found Get task by id {} in current project scope.
+03-09-2025 10:24:46.006 [java] [DEBUG] Scanning packages for hooks
+03-09-2025 10:24:46.009 [java] [DEBUG] Scanned steps (using static parsing + reflections): 
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Get task by id {} : public void getTaskById(Integer id)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Get all tasks : public void getAllTasks()
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Response status code should be {} : public void checkStatusCode(Integer statusCode)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Task {} should be {} : public void checkField(String field, String value)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Patch task by id {} : public void changeTaskStatusById(Table table)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Response type should be {} : public void checkResponseType(String type)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Create task that {} : public void createTask(Table table)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Update task that {} : public void updateTask(Table table)
+03-09-2025 10:24:46.009 [java] [DEBUG] 	Delete task by id {} : public void deleteTask(Integer id)
+03-09-2025 10:24:46.368 [Gauge] [DEBUG] Validation completed.
+03-09-2025 10:24:46.369 [Gauge] [DEBUG] Run started
+03-09-2025 10:24:46.369 [Gauge] [DEBUG] Starting Html Report plugin
+03-09-2025 10:24:46.409 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60763
+03-09-2025 10:24:46.409 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 60763
+03-09-2025 10:24:46.409 [Gauge] [DEBUG] Starting Xml Report plugin
+03-09-2025 10:24:46.442 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60765
+03-09-2025 10:24:46.442 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 60765
+03-09-2025 10:24:46.442 [Gauge] [DEBUG] Initialising suite data store.
+03-09-2025 10:24:46.634 [java] [DEBUG] Executing 'Update task that {}' using 'class taskloom.steps.StepImplementation.updateTask
+03-09-2025 10:24:46.944 [java] [INFO] Request method:	PUT
+03-09-2025 10:24:46.944 [java] [INFO] Request URI:	http://localhost:8080/tasks/1
+03-09-2025 10:24:46.944 [java] [INFO] Proxy:			<none>
+03-09-2025 10:24:46.944 [java] [INFO] Request params:	<none>
+03-09-2025 10:24:46.944 [java] [INFO] Query params:	<none>
+03-09-2025 10:24:46.944 [java] [INFO] Form params:	<none>
+03-09-2025 10:24:46.944 [java] [INFO] Path params:	<none>
+03-09-2025 10:24:46.944 [java] [INFO] Headers:		Accept=application/json
+03-09-2025 10:24:46.944 [java] [INFO] 				Content-Type=application/json
+03-09-2025 10:24:46.944 [java] [INFO] Cookies:		<none>
+03-09-2025 10:24:46.944 [java] [INFO] Multiparts:		<none>
+03-09-2025 10:24:46.944 [java] [INFO] Body:
+03-09-2025 10:24:46.944 [java] [INFO] {
+03-09-2025 10:24:46.944 [java] [INFO] "title": "make calls",
+03-09-2025 10:24:46.944 [java] [INFO] "description": "John, Alice",
+03-09-2025 10:24:46.944 [java] [INFO] "status": "DONE"
+03-09-2025 10:24:46.944 [java] [INFO] }
+03-09-2025 10:24:47.146 [java] [INFO] HTTP/1.1 202
+03-09-2025 10:24:47.146 [java] [INFO] Content-Type: application/json
+03-09-2025 10:24:47.146 [java] [INFO] Transfer-Encoding: chunked
+03-09-2025 10:24:47.146 [java] [INFO] Date: Wed, 03 Sep 2025 07:24:47 GMT
+03-09-2025 10:24:47.146 [java] [INFO] Keep-Alive: timeout=60
+03-09-2025 10:24:47.146 [java] [INFO] Connection: keep-alive
+03-09-2025 10:24:47.146 [java] [INFO] {
+03-09-2025 10:24:47.146 [java] [INFO] "id": 1,
+03-09-2025 10:24:47.146 [java] [INFO] "title": "make calls",
+03-09-2025 10:24:47.146 [java] [INFO] "description": "John, Alice",
+03-09-2025 10:24:47.146 [java] [INFO] "status": "DONE"
+03-09-2025 10:24:47.146 [java] [INFO] }
+03-09-2025 10:24:47.152 [java] [DEBUG] Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode
+03-09-2025 10:24:47.158 [java] [DEBUG] Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType
+03-09-2025 10:24:47.161 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:24:47.330 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:24:47.340 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:24:47.348 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:24:47.368 [java] [DEBUG] Executing 'Update task that {}' using 'class taskloom.steps.StepImplementation.updateTask
+03-09-2025 10:24:47.372 [java] [INFO] Request method:	PUT
+03-09-2025 10:24:47.372 [java] [INFO] Request URI:	http://localhost:8080/tasks/1
+03-09-2025 10:24:47.372 [java] [INFO] Proxy:			<none>
+03-09-2025 10:24:47.372 [java] [INFO] Request params:	<none>
+03-09-2025 10:24:47.372 [java] [INFO] Query params:	<none>
+03-09-2025 10:24:47.372 [java] [INFO] Form params:	<none>
+03-09-2025 10:24:47.372 [java] [INFO] Path params:	<none>
+03-09-2025 10:24:47.372 [java] [INFO] Headers:		Accept=application/json
+03-09-2025 10:24:47.372 [java] [INFO] 				Content-Type=application/json
+03-09-2025 10:24:47.372 [java] [INFO] Cookies:		<none>
+03-09-2025 10:24:47.372 [java] [INFO] Multiparts:		<none>
+03-09-2025 10:24:47.372 [java] [INFO] Body:
+03-09-2025 10:24:47.372 [java] [INFO] {
+03-09-2025 10:24:47.372 [java] [INFO] "title": "make calls",
+03-09-2025 10:24:47.372 [java] [INFO] "description": "do",
+03-09-2025 10:24:47.372 [java] [INFO] "status": "TODO"
+03-09-2025 10:24:47.372 [java] [INFO] }
+03-09-2025 10:24:47.389 [java] [INFO] HTTP/1.1 400
+03-09-2025 10:24:47.389 [java] [INFO] Content-Type: application/json
+03-09-2025 10:24:47.389 [java] [INFO] Transfer-Encoding: chunked
+03-09-2025 10:24:47.389 [java] [INFO] Date: Wed, 03 Sep 2025 07:24:47 GMT
+03-09-2025 10:24:47.389 [java] [INFO] Connection: close
+03-09-2025 10:24:47.389 [java] [INFO] {
+03-09-2025 10:24:47.389 [java] [INFO] "message": "Argument not valid.",
+03-09-2025 10:24:47.389 [java] [INFO] "statusCode": 400
+03-09-2025 10:24:47.389 [java] [INFO] }
+03-09-2025 10:24:47.392 [java] [DEBUG] Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode
+03-09-2025 10:24:47.402 [xml-report] [INFO] Successfully generated xml-report to => /Users/alper/Desktop/taskloom/taskloom-api-test/reports/xml-report
+03-09-2025 10:24:47.403 [html-report] [DEBUG] Transformed SuiteResult to report structure
+03-09-2025 10:24:47.409 [html-report] [INFO] Successfully generated html-report to => /Users/alper/Desktop/taskloom/taskloom-api-test/reports/html-report/index.html
+03-09-2025 10:24:47.409 [html-report] [DEBUG] Done generating HTML report using theme from /Users/alper/.gauge/plugins/html-report/4.3.3/themes/default
+03-09-2025 10:24:47.409 [Gauge] [DEBUG] Sending kill message to Html Report plugin.
+03-09-2025 10:24:47.409 [Gauge] [DEBUG] Sending kill message to Xml Report plugin.
+03-09-2025 10:24:47.410 [java] [DEBUG] Killing Java runner...
+03-09-2025 10:24:47.410 [java] [DEBUG] Stopping execution pool...
+03-09-2025 10:24:47.410 [java] [DEBUG] Shutting down grpc server...
+03-09-2025 10:24:47.412 [Gauge] [INFO] Specifications:	1 executed	1 passed	0 failed	0 skipped
+03-09-2025 10:24:47.412 [Gauge] [INFO] Scenarios:	2 executed	2 passed	0 failed	0 skipped
+03-09-2025 10:24:47.412 [Gauge] [INFO] 
+Total time taken: 1.031s
+03-09-2025 10:32:05.042 [Gauge] [DEBUG] Created gauge_screenshots_dir at /Users/alper/Desktop/taskloom/taskloom-api-test/.gauge/screenshots
+03-09-2025 10:32:05.042 [Gauge] [DEBUG] Plugin java is already installed.
+03-09-2025 10:32:05.042 [Gauge] [DEBUG] Plugin html-report is already installed.
+03-09-2025 10:32:05.043 [Gauge] [DEBUG] Plugin xml-report is already installed.
+03-09-2025 10:32:05.043 [Gauge] [DEBUG] Parsing started.
+03-09-2025 10:32:05.043 [Gauge] [DEBUG] Started concepts parsing.
+03-09-2025 10:32:05.044 [Gauge] [DEBUG] 0 concepts parsing completed.
+03-09-2025 10:32:05.044 [Gauge] [DEBUG] Started specifications parsing.
+03-09-2025 10:32:05.044 [Gauge] [DEBUG] 1 specifications parsing completed.
+03-09-2025 10:32:05.044 [Gauge] [DEBUG] Parsing completed.
+03-09-2025 10:32:05.055 [java] [DEBUG] ***** Printing Properties/Env Values *****
+03-09-2025 10:32:05.055 [java] [DEBUG] PATH: /Users/alper/.nvm/versions/node/v22.18.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/alper/.local/bin:/Users/alper/.gauge/plugins/screenshot/0.3.2
+03-09-2025 10:32:05.055 [java] [DEBUG] JAVA_HOME: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_project_root: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_parallel_streams_count: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_reports_dir: reports
+03-09-2025 10:32:05.055 [java] [DEBUG] overwrite_reports: true
+03-09-2025 10:32:05.055 [java] [DEBUG] logs_directory: logs
+03-09-2025 10:32:05.055 [java] [DEBUG] enable_multithreading: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_specs_dir: specs
+03-09-2025 10:32:05.055 [java] [DEBUG] csv_delimiter: ,
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_java_home: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_custom_build_path: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_additional_libs: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_jvm_args: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_custom_compile_dir: 
+03-09-2025 10:32:05.055 [java] [DEBUG] gauge_clear_state_level: 
+03-09-2025 10:32:05.055 [java] [DEBUG] ***** END *****
+03-09-2025 10:32:05.643 [Gauge] [DEBUG] Checking updates...
+03-09-2025 10:32:05.643 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:32:05.684 [java] [ERROR] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+03-09-2025 10:32:05.684 [java] [ERROR] WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+03-09-2025 10:32:05.684 [java] [ERROR] WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+03-09-2025 10:32:05.684 [java] [ERROR] WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+03-09-2025 10:32:05.800 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/java?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:32:05.849 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:32:05.893 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/xml-report?l=java&p=html-report,java,screenshot,xml-report&o=darwin&a=arm64
+03-09-2025 10:32:06.264 [java] [DEBUG] classpath set to /Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.base:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.compiler:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.datatransfer:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.desktop:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.instrument:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.logging:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.management:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.management.rmi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.naming:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.net.http:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.prefs:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.rmi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.scripting:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.se:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.security.jgss:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.security.sasl:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.smartcardio:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.sql:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.sql.rowset:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.transaction.xa:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.xml:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/java.xml.crypto:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.accessibility:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.attach:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.charsets:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.compiler:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.crypto.cryptoki:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.crypto.ec:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.dynalink:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.editpad:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.graal.compiler:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.graal.compiler.management:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.hotspot.agent:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.httpserver:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.incubator.vector:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.ed:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.jvmstat:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.le:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.md:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.opt:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.internal.vm.ci:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jartool:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.javadoc:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jcmd:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jconsole:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jdeps:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jdi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jdwp.agent:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jfr:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jlink:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jpackage:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jshell:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jsobject:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.jstatd:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.localedata:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.management:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.management.agent:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.management.jfr:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.naming.dns:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.naming.rmi:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.net:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.nio.mapmode:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.sctp:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.security.auth:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.security.jgss:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.unsupported:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.unsupported.desktop:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.xml.dom:/Users/alper/Library/Java/JavaVirtualMachines/corretto-24.0.2/Contents/Home!/jdk.zipfs:/Users/alper/Desktop/taskloom/taskloom-api-test/target/test-classes:/Users/alper/Desktop/taskloom/taskloom-api-test/target/classes:/Users/alper/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/alper/.m2/repository/com/thoughtworks/gauge/gauge-java/0.12.0/gauge-java-0.12.0.jar:/Users/alper/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/Users/alper/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/alper/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/Users/alper/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/Users/alper/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alper/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/alper/.m2/repository/com/github/javaparser/javaparser-core/3.26.4/javaparser-core-3.26.4.jar:/Users/alper/.m2/repository/org/json/json/20250107/json-20250107.jar:/Users/alper/.m2/repository/com/google/protobuf/protobuf-java/4.30.2/protobuf-java-4.30.2.jar:/Users/alper/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/alper/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/alper/.m2/repository/io/grpc/grpc-api/1.72.0/grpc-api-1.72.0.jar:/Users/alper/.m2/repository/com/google/errorprone/error_prone_annotations/2.30.0/error_prone_annotations-2.30.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-netty-shaded/1.72.0/grpc-netty-shaded-1.72.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-util/1.72.0/grpc-util-1.72.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-core/1.72.0/grpc-core-1.72.0.jar:/Users/alper/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/alper/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/Users/alper/.m2/repository/io/grpc/grpc-context/1.72.0/grpc-context-1.72.0.jar:/Users/alper/.m2/repository/io/perfmark/perfmark-api/0.27.0/perfmark-api-0.27.0.jar:/Users/alper/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.24/animal-sniffer-annotations-1.24.jar:/Users/alper/.m2/repository/io/grpc/grpc-protobuf/1.72.0/grpc-protobuf-1.72.0.jar:/Users/alper/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.51.0/proto-google-common-protos-2.51.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-protobuf-lite/1.72.0/grpc-protobuf-lite-1.72.0.jar:/Users/alper/.m2/repository/io/grpc/grpc-stub/1.72.0/grpc-stub-1.72.0.jar:/Users/alper/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.13.4/junit-jupiter-api-5.13.4.jar:/Users/alper/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/alper/.m2/repository/org/junit/platform/junit-platform-commons/1.13.4/junit-platform-commons-1.13.4.jar:/Users/alper/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/alper/.m2/repository/io/rest-assured/rest-assured/5.5.6/rest-assured-5.5.6.jar:/Users/alper/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/alper/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/alper/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/alper/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/alper/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alper/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/alper/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/alper/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/alper/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/alper/.m2/repository/io/rest-assured/json-path/5.5.6/json-path-5.5.6.jar:/Users/alper/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/alper/.m2/repository/io/rest-assured/rest-assured-common/5.5.6/rest-assured-common-5.5.6.jar:/Users/alper/.m2/repository/io/rest-assured/xml-path/5.5.6/xml-path-5.5.6.jar:/Users/alper/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/alper/.m2/repository/io/rest-assured/json-schema-validator/5.5.6/json-schema-validator-5.5.6.jar:/Users/alper/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/alper/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/alper/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/alper/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/alper/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/alper/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/alper/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/alper/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/alper/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/alper/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/alper/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/alper/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/alper/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/alper/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/alper/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/alper/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.13.4/junit-jupiter-engine-5.13.4.jar:/Users/alper/.m2/repository/org/junit/platform/junit-platform-engine/1.13.4/junit-platform-engine-1.13.4.jar
+03-09-2025 10:32:06.264 [java] [DEBUG] found java executable in java
+03-09-2025 10:32:06.264 [java] [DEBUG] running - java [-Dfile.encoding=UTF-8 com.thoughtworks.gauge.GaugeRuntime --start]
+03-09-2025 10:32:06.264 [java] [DEBUG] stdout/stderr is logged to logs/79078-java.out
+03-09-2025 10:32:06.312 [java] [DEBUG] multithreading is set to false
+03-09-2025 10:32:06.433 [java] [DEBUG] Using reflection to scan dependencies for gauge implementations...
+03-09-2025 10:32:06.447 [java] [ERROR] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+03-09-2025 10:32:06.447 [java] [ERROR] SLF4J: Defaulting to no-operation (NOP) logger implementation
+03-09-2025 10:32:06.447 [java] [ERROR] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+03-09-2025 10:32:06.463 [java] [ERROR] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+03-09-2025 10:32:06.463 [java] [ERROR] WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (file:/Users/alper/.m2/repository/io/grpc/grpc-netty-shaded/1.72.0/grpc-netty-shaded-1.72.0.jar)
+03-09-2025 10:32:06.463 [java] [ERROR] WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+03-09-2025 10:32:06.463 [java] [ERROR] WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+03-09-2025 10:32:06.596 [java] [DEBUG] gauge-java took 284milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value.
+03-09-2025 10:32:06.596 [java] [DEBUG] run 'gauge config runner_connection_timeout' and verify that it is < 284
+03-09-2025 10:32:06.596 [java] [DEBUG] starting gRPC server...
+03-09-2025 10:32:06.634 [java] [DEBUG] started gRPC server on port 60984
+03-09-2025 10:32:06.634 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60984
+03-09-2025 10:32:06.634 [Gauge] [DEBUG] Successfully made the connection with runner with port: 60984
+03-09-2025 10:32:06.634 [Gauge] [DEBUG] Validation started.
+03-09-2025 10:32:07.176 [java] [DEBUG] Scanning packages for steps
+03-09-2025 10:32:07.178 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.createTask' and 'taskloom.steps.StepImplementation.createTask'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Create task that {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.checkStatusCode' and 'taskloom.steps.StepImplementation.checkStatusCode'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Response status code should be {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.checkField' and 'taskloom.steps.StepImplementation.checkField'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Task {} should be {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.deleteTask' and 'taskloom.steps.StepImplementation.deleteTask'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Delete task by id {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.updateTask' and 'taskloom.steps.StepImplementation.updateTask'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Update task that {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.changeTaskStatusById' and 'taskloom.steps.StepImplementation.changeTaskStatusById'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Patch task by id {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.getAllTasks' and 'taskloom.steps.StepImplementation.getAllTasks'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Get all tasks in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.checkResponseType' and 'taskloom.steps.StepImplementation.checkResponseType'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Response type should be {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Comparing 'taskloom.steps.StepImplementation.getTaskById' and 'taskloom.steps.StepImplementation.getTaskById'
+03-09-2025 10:32:07.179 [java] [DEBUG] Found Get task by id {} in current project scope.
+03-09-2025 10:32:07.179 [java] [DEBUG] Scanning packages for hooks
+03-09-2025 10:32:07.182 [java] [DEBUG] Scanned steps (using static parsing + reflections): 
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Get task by id {} : public void getTaskById(Integer id)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Get all tasks : public void getAllTasks()
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Response status code should be {} : public void checkStatusCode(Integer statusCode)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Task {} should be {} : public void checkField(String field, String value)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Patch task by id {} : public void changeTaskStatusById(Table table)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Response type should be {} : public void checkResponseType(String type)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Create task that {} : public void createTask(Table table)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Update task that {} : public void updateTask(Table table)
+03-09-2025 10:32:07.182 [java] [DEBUG] 	Delete task by id {} : public void deleteTask(Integer id)
+03-09-2025 10:32:07.425 [Gauge] [DEBUG] Validation completed.
+03-09-2025 10:32:07.425 [Gauge] [DEBUG] Run started
+03-09-2025 10:32:07.426 [Gauge] [DEBUG] Starting Html Report plugin
+03-09-2025 10:32:07.455 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60987
+03-09-2025 10:32:07.456 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 60987
+03-09-2025 10:32:07.456 [Gauge] [DEBUG] Starting Xml Report plugin
+03-09-2025 10:32:07.493 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 60989
+03-09-2025 10:32:07.493 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 60989
+03-09-2025 10:32:07.493 [Gauge] [DEBUG] Initialising suite data store.
+03-09-2025 10:32:07.621 [java] [DEBUG] Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask
+03-09-2025 10:32:07.827 [java] [INFO] Request method:	POST
+03-09-2025 10:32:07.827 [java] [INFO] Request URI:	http://localhost:8080/tasks
+03-09-2025 10:32:07.827 [java] [INFO] Proxy:			<none>
+03-09-2025 10:32:07.827 [java] [INFO] Request params:	<none>
+03-09-2025 10:32:07.827 [java] [INFO] Query params:	<none>
+03-09-2025 10:32:07.827 [java] [INFO] Form params:	<none>
+03-09-2025 10:32:07.827 [java] [INFO] Path params:	<none>
+03-09-2025 10:32:07.827 [java] [INFO] Headers:		Accept=application/json
+03-09-2025 10:32:07.827 [java] [INFO] 				Content-Type=application/json
+03-09-2025 10:32:07.827 [java] [INFO] Cookies:		<none>
+03-09-2025 10:32:07.827 [java] [INFO] Multiparts:		<none>
+03-09-2025 10:32:07.827 [java] [INFO] Body:
+03-09-2025 10:32:07.827 [java] [INFO] {
+03-09-2025 10:32:07.827 [java] [INFO] "title": "grocery shopping",
+03-09-2025 10:32:07.827 [java] [INFO] "description": "milk, tea, coffee",
+03-09-2025 10:32:07.827 [java] [INFO] "status": "TODO"
+03-09-2025 10:32:07.827 [java] [INFO] }
+03-09-2025 10:32:07.954 [java] [INFO] HTTP/1.1 201
+03-09-2025 10:32:07.954 [java] [INFO] Content-Type: application/json
+03-09-2025 10:32:07.954 [java] [INFO] Transfer-Encoding: chunked
+03-09-2025 10:32:07.954 [java] [INFO] Date: Wed, 03 Sep 2025 07:32:07 GMT
+03-09-2025 10:32:07.954 [java] [INFO] Keep-Alive: timeout=60
+03-09-2025 10:32:07.954 [java] [INFO] Connection: keep-alive
+03-09-2025 10:32:07.954 [java] [INFO] {
+03-09-2025 10:32:07.954 [java] [INFO] "id": 2,
+03-09-2025 10:32:07.954 [java] [INFO] "title": "grocery shopping",
+03-09-2025 10:32:07.954 [java] [INFO] "description": "milk, tea, coffee",
+03-09-2025 10:32:07.954 [java] [INFO] "status": "TODO"
+03-09-2025 10:32:07.954 [java] [INFO] }
+03-09-2025 10:32:07.962 [java] [DEBUG] Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode
+03-09-2025 10:32:07.966 [java] [DEBUG] Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType
+03-09-2025 10:32:07.969 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:32:08.100 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:32:08.107 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:32:08.116 [java] [DEBUG] Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask
+03-09-2025 10:32:08.119 [java] [INFO] Request method:	POST
+03-09-2025 10:32:08.119 [java] [INFO] Request URI:	http://localhost:8080/tasks
+03-09-2025 10:32:08.119 [java] [INFO] Proxy:			<none>
+03-09-2025 10:32:08.119 [java] [INFO] Request params:	<none>
+03-09-2025 10:32:08.119 [java] [INFO] Query params:	<none>
+03-09-2025 10:32:08.119 [java] [INFO] Form params:	<none>
+03-09-2025 10:32:08.119 [java] [INFO] Path params:	<none>
+03-09-2025 10:32:08.119 [java] [INFO] Headers:		Accept=application/json
+03-09-2025 10:32:08.119 [java] [INFO] 				Content-Type=application/json
+03-09-2025 10:32:08.119 [java] [INFO] Cookies:		<none>
+03-09-2025 10:32:08.119 [java] [INFO] Multiparts:		<none>
+03-09-2025 10:32:08.119 [java] [INFO] Body:
+03-09-2025 10:32:08.119 [java] [INFO] {
+03-09-2025 10:32:08.119 [java] [INFO] "title": "homeworks",
+03-09-2025 10:32:08.119 [java] [INFO] "description": "math, science, history",
+03-09-2025 10:32:08.119 [java] [INFO] "status": null
+03-09-2025 10:32:08.119 [java] [INFO] }
+03-09-2025 10:32:08.130 [java] [INFO] HTTP/1.1 201
+03-09-2025 10:32:08.130 [java] [INFO] Content-Type: application/json
+03-09-2025 10:32:08.130 [java] [INFO] Transfer-Encoding: chunked
+03-09-2025 10:32:08.130 [java] [INFO] Date: Wed, 03 Sep 2025 07:32:08 GMT
+03-09-2025 10:32:08.130 [java] [INFO] Keep-Alive: timeout=60
+03-09-2025 10:32:08.130 [java] [INFO] Connection: keep-alive
+03-09-2025 10:32:08.130 [java] [INFO] {
+03-09-2025 10:32:08.131 [java] [INFO] "id": 3,
+03-09-2025 10:32:08.131 [java] [INFO] "title": "homeworks",
+03-09-2025 10:32:08.131 [java] [INFO] "description": "math, science, history",
+03-09-2025 10:32:08.131 [java] [INFO] "status": "TODO"
+03-09-2025 10:32:08.131 [java] [INFO] }
+03-09-2025 10:32:08.133 [java] [DEBUG] Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode
+03-09-2025 10:32:08.136 [java] [DEBUG] Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType
+03-09-2025 10:32:08.138 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:32:08.149 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:32:08.158 [java] [DEBUG] Executing 'Task {} should be {}' using 'class taskloom.steps.StepImplementation.checkField
+03-09-2025 10:32:08.169 [java] [DEBUG] Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask
+03-09-2025 10:32:08.172 [java] [INFO] Request method:	POST
+03-09-2025 10:32:08.172 [java] [INFO] Request URI:	http://localhost:8080/tasks
+03-09-2025 10:32:08.172 [java] [INFO] Proxy:			<none>
+03-09-2025 10:32:08.172 [java] [INFO] Request params:	<none>
+03-09-2025 10:32:08.172 [java] [INFO] Query params:	<none>
+03-09-2025 10:32:08.172 [java] [INFO] Form params:	<none>
+03-09-2025 10:32:08.172 [java] [INFO] Path params:	<none>
+03-09-2025 10:32:08.172 [java] [INFO] Headers:		Accept=application/json
+03-09-2025 10:32:08.172 [java] [INFO] 				Content-Type=application/json
+03-09-2025 10:32:08.172 [java] [INFO] Cookies:		<none>
+03-09-2025 10:32:08.172 [java] [INFO] Multiparts:		<none>
+03-09-2025 10:32:08.172 [java] [INFO] Body:
+03-09-2025 10:32:08.172 [java] [INFO] {
+03-09-2025 10:32:08.172 [java] [INFO] "title": "do",
+03-09-2025 10:32:08.172 [java] [INFO] "description": "John, Alice",
+03-09-2025 10:32:08.172 [java] [INFO] "status": "TODO"
+03-09-2025 10:32:08.172 [java] [INFO] }
+03-09-2025 10:32:08.181 [java] [INFO] HTTP/1.1 400
+03-09-2025 10:32:08.181 [java] [INFO] Content-Type: application/json
+03-09-2025 10:32:08.181 [java] [INFO] Transfer-Encoding: chunked
+03-09-2025 10:32:08.181 [java] [INFO] Date: Wed, 03 Sep 2025 07:32:08 GMT
+03-09-2025 10:32:08.181 [java] [INFO] Connection: close
+03-09-2025 10:32:08.181 [java] [INFO] {
+03-09-2025 10:32:08.181 [java] [INFO] "message": "Argument not valid.",
+03-09-2025 10:32:08.181 [java] [INFO] "statusCode": 400
+03-09-2025 10:32:08.181 [java] [INFO] }
+03-09-2025 10:32:08.184 [java] [DEBUG] Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode
+03-09-2025 10:32:08.192 [html-report] [DEBUG] Transformed SuiteResult to report structure
+03-09-2025 10:32:08.199 [html-report] [INFO] Successfully generated html-report to => /Users/alper/Desktop/taskloom/taskloom-api-test/reports/html-report/index.html
+03-09-2025 10:32:08.199 [html-report] [DEBUG] Done generating HTML report using theme from /Users/alper/.gauge/plugins/html-report/4.3.3/themes/default
+03-09-2025 10:32:08.200 [xml-report] [INFO] Successfully generated xml-report to => /Users/alper/Desktop/taskloom/taskloom-api-test/reports/xml-report
+03-09-2025 10:32:08.200 [Gauge] [DEBUG] Sending kill message to Html Report plugin.
+03-09-2025 10:32:08.200 [Gauge] [DEBUG] Sending kill message to Xml Report plugin.
+03-09-2025 10:32:08.201 [java] [DEBUG] Killing Java runner...
+03-09-2025 10:32:08.202 [java] [DEBUG] Stopping execution pool...
+03-09-2025 10:32:08.202 [java] [DEBUG] Shutting down grpc server...
+03-09-2025 10:32:08.203 [Gauge] [INFO] Specifications:	1 executed	1 passed	0 failed	0 skipped
+03-09-2025 10:32:08.203 [Gauge] [INFO] Scenarios:	3 executed	3 passed	0 failed	0 skipped
+03-09-2025 10:32:08.203 [Gauge] [INFO] 
+Total time taken: 766ms
