@@ -1,35 +1,11 @@
 <testsuites>
-	<testsuite id="1" tests="3" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_create.spec" time="0.043" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
+	<testsuite id="1" tests="3" failures="1" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_create.spec" time="0.529" timestamp="2025-09-03T11:57:12" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
 		<properties></properties>
-		<testcase classname="Specification Heading" name="Create task with status" time="0.020"></testcase>
-		<testcase classname="Specification Heading" name="Create Task without status response should be TODO" time="0.016"></testcase>
-		<testcase classname="Specification Heading" name="Update task with incorret argument" time="0.007"></testcase>
-		<system-out></system-out>
-		<system-err></system-err>
-	</testsuite>
-	<testsuite id="2" tests="1" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_delete.spec" time="0.017" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
-		<properties></properties>
-		<testcase classname="Specification Heading" name="Delete task by id" time="0.017"></testcase>
-		<system-out></system-out>
-		<system-err></system-err>
-	</testsuite>
-	<testsuite id="3" tests="2" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_get_list.spec" time="0.060" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
-		<properties></properties>
-		<testcase classname="Specification Heading" name="Get task by id" time="0.010"></testcase>
-		<testcase classname="Specification Heading" name="Get all tasks" time="0.050"></testcase>
-		<system-out></system-out>
-		<system-err></system-err>
-	</testsuite>
-	<testsuite id="4" tests="1" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_status.spec" time="0.015" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
-		<properties></properties>
-		<testcase classname="Specification Heading" name="Patch task status" time="0.015"></testcase>
-		<system-out></system-out>
-		<system-err></system-err>
-	</testsuite>
-	<testsuite id="5" tests="2" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/taks_update.spec" time="0.498" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
-		<properties></properties>
-		<testcase classname="Specification Heading" name="Update task with correct argument" time="0.486"></testcase>
-		<testcase classname="Specification Heading" name="Update task with incorret argument" time="0.012"></testcase>
+		<testcase classname="Specification Heading" name="Create task with status" time="0.486">
+			<failure message="Task &#34;status&#34; should be &#34;DONE&#34;&#xA;Step Execution Failure: &#39;org.opentest4j.AssertionFailedError: expected: &lt;DONE&gt; but was: &lt;TODO&gt;&#39;" type="Task &#34;status&#34; should be &#34;DONE&#34;&#xA;Step Execution Failure: &#39;org.opentest4j.AssertionFailedError: expected: &lt;DONE&gt; but was: &lt;TODO&gt;&#39;">org.opentest4j.AssertionFailedError: expected: &lt;DONE&gt; but was: &lt;TODO&gt;&#xA;&#x9;at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#xA;&#x9;at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#xA;&#x9;at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#xA;&#x9;at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#xA;&#x9;at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#xA;&#x9;at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#xA;&#x9;at taskloom.steps.StepImplementation.checkField(StepImplementation.java:41)&#xA;&#x9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#xA;&#x9;at java.base/java.lang.reflect.Method.invoke(Method.java:565)&#xA;&#x9;at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)&#xA;&#x9;at com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:66)&#xA;&#x9;at com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:59)&#xA;&#x9;at com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:41)&#xA;&#x9;at com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:14)&#xA;&#x9;at com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:33)&#xA;&#x9;at com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:19)&#xA;&#x9;at com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:44)&#xA;&#x9;at com.thoughtworks.gauge.RunnerServiceHandler.lambda$executeStep$7(RunnerServiceHandler.java:166)&#xA;&#x9;at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)&#xA;&#x9;at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)&#xA;&#x9;at java.base/java.lang.Thread.run(Thread.java:1447)&#xA;</failure>
+		</testcase>
+		<testcase classname="Specification Heading" name="Create Task without status response should be TODO" time="0.029"></testcase>
+		<testcase classname="Specification Heading" name="Update task with incorret argument" time="0.013"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>

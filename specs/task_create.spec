@@ -15,7 +15,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * Response type should be "TaskResponse"
 * Task "title" should be "grocery shopping"
 * Task "description" should be "milk, tea, coffee"
-* Task "status" should be "TODO"
+* Task "status" should be "DONE"
 
 
 ## Create Task without status response should be TODO
