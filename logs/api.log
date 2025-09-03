@@ -68,3 +68,38 @@
 02-09-2025 16:36:44.404 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Get all tasks"  parameterizedStepValue:"Get all tasks"}}
 02-09-2025 16:36:44.405 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Response type should be \"List\""}
 02-09-2025 16:36:44.405 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Response type should be {}"  parameterizedStepValue:"Response type should be <List>"  parameters:"List"}}
+03-09-2025 08:18:10.060 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+03-09-2025 08:18:10.062 [Gauge] [INFO] Initializing specs cache with 5 specs
+03-09-2025 08:18:10.062 [Gauge] [DEBUG] Adding specs from /Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_get_list.spec
+03-09-2025 08:18:10.062 [Gauge] [DEBUG] Adding specs from /Users/alper/Desktop/taskloom/taskloom-api-test/specs/taks_update.spec
+03-09-2025 08:18:10.062 [Gauge] [DEBUG] Adding specs from /Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_status.spec
+03-09-2025 08:18:10.062 [Gauge] [DEBUG] Adding specs from /Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_create.spec
+03-09-2025 08:18:10.062 [Gauge] [DEBUG] Adding specs from /Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_delete.spec
+03-09-2025 08:18:10.062 [Gauge] [INFO] Initializing steps cache with 5 steps
+03-09-2025 08:18:10.063 [Gauge] [INFO] Gauge daemon initialized and listening on port: 58187
+03-09-2025 08:18:10.063 [Gauge] [DEBUG] Watching directory: /Users/alper/Desktop/taskloom/taskloom-api-test/specs
+03-09-2025 08:18:10.063 [Gauge] [DEBUG] Found 5 files
+03-09-2025 08:18:15.341 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Create task that"  hasInlineTable:true}
+03-09-2025 08:18:15.342 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Create task that {}"  parameterizedStepValue:"Create task that <table>"  parameters:"table"}}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Response status code should be \"201\""}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Response status code should be {}"  parameterizedStepValue:"Response status code should be <201>"  parameters:"201"}}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Response status code should be <statusCode>"}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Response status code should be {}"  parameterizedStepValue:"Response status code should be <statusCode>"  parameters:"statusCode"}}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Response type should be \"TaskResponse\""}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Response type should be {}"  parameterizedStepValue:"Response type should be <TaskResponse>"  parameters:"TaskResponse"}}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Response type should be <type>"}
+03-09-2025 08:18:15.349 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Response type should be {}"  parameterizedStepValue:"Response type should be <type>"  parameters:"type"}}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Task \"title\" should be \"grocery shopping\""}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Task {} should be {}"  parameterizedStepValue:"Task <title> should be <grocery shopping>"  parameters:"title"  parameters:"grocery shopping"}}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Task <field> should be <value>"}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Task {} should be {}"  parameterizedStepValue:"Task <field> should be <value>"  parameters:"field"  parameters:"value"}}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Task \"description\" should be \"milk, tea, coffee\""}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Task {} should be {}"  parameterizedStepValue:"Task <description> should be <milk, tea, coffee>"  parameters:"description"  parameters:"milk, tea, coffee"}}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Task \"status\" should be \"TODO\""}
+03-09-2025 08:18:15.350 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Task {} should be {}"  parameterizedStepValue:"Task <status> should be <TODO>"  parameters:"status"  parameters:"TODO"}}
+03-09-2025 08:18:15.351 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Task \"title\" should be \"homeworks\""}
+03-09-2025 08:18:15.351 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Task {} should be {}"  parameterizedStepValue:"Task <title> should be <homeworks>"  parameters:"title"  parameters:"homeworks"}}
+03-09-2025 08:18:15.351 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Task \"description\" should be \"math, science, history\""}
+03-09-2025 08:18:15.351 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Task {} should be {}"  parameterizedStepValue:"Task <description> should be <math, science, history>"  parameters:"description"  parameters:"math, science, history"}}
+03-09-2025 08:18:15.352 [Gauge] [DEBUG] Api Request Received: messageType:GetStepValueRequest  messageId:4  stepValueRequest:{stepText:"Response status code should be \"400\""}
+03-09-2025 08:18:15.352 [Gauge] [DEBUG] Sending API response: messageType:GetStepValueResponse  messageId:4  stepValueResponse:{stepValue:{stepValue:"Response status code should be {}"  parameterizedStepValue:"Response status code should be <400>"  parameters:"400"}}

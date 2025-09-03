@@ -1,4 +1,4 @@
-package taskloom.services;
+package taskloom.base;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;

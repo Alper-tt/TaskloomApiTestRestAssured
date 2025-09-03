@@ -8,9 +8,9 @@ import taskloom.model.TaskStatus;
 import taskloom.model.request.TaskCreateRequest;
 import taskloom.model.request.TaskStatusUpdate;
 import taskloom.model.request.TaskUpdateRequest;
-import taskloom.services.BaseMethods;
+import taskloom.base.BaseMethods;
 
-public class StepImplementations {
+public class StepImplementation {
 
     Response taskResponse;
     BaseMethods baseMethods = new BaseMethods();
