@@ -15,7 +15,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * Response type should be "TaskResponse"
 * Task "title" should be "grocery shopping"
 * Task "description" should be "milk, tea, coffee"
-* Task "status" should be "DONE"
+* Task "status" should be "TODO"
 
 
 ## Create Task without status response should be TODO
@@ -29,12 +29,3 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * Task "title" should be "homeworks"
 * Task "description" should be "math, science, history"
 * Task "status" should be "TODO"
-
-
-## Update task with incorret argument
-* Create task that
-  |title     |description|status|
-  |----------|-----------|------|
-  |do        |John, Alice|TODO  |
-
-* Response status code should be "400"

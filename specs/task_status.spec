@@ -9,8 +9,8 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * Patch task by id
     |id|status|
     |--|------|
-    |1 |TODO  |
+    |1 |DONE  |
 * Response status code should be "202"
 * Response type should be "TaskResponse"
 * Task "id" should be "1"
-* Task "status" should be "TODO"
+* Task "status" should be "DONE"
