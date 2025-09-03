@@ -1,8 +1,34 @@
 <testsuites>
-	<testsuite id="1" tests="3" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_create.spec" time="0.508" timestamp="2025-09-03T10:32:08" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
+	<testsuite id="1" tests="3" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_create.spec" time="0.043" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
 		<properties></properties>
-		<testcase classname="Specification Heading" name="Create task with status" time="0.469"></testcase>
-		<testcase classname="Specification Heading" name="Create Task without status response should be TODO" time="0.027"></testcase>
+		<testcase classname="Specification Heading" name="Create task with status" time="0.020"></testcase>
+		<testcase classname="Specification Heading" name="Create Task without status response should be TODO" time="0.016"></testcase>
+		<testcase classname="Specification Heading" name="Update task with incorret argument" time="0.007"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+	<testsuite id="2" tests="1" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_delete.spec" time="0.017" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
+		<properties></properties>
+		<testcase classname="Specification Heading" name="Delete task by id" time="0.017"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+	<testsuite id="3" tests="2" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_get_list.spec" time="0.060" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
+		<properties></properties>
+		<testcase classname="Specification Heading" name="Get task by id" time="0.010"></testcase>
+		<testcase classname="Specification Heading" name="Get all tasks" time="0.050"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+	<testsuite id="4" tests="1" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_status.spec" time="0.015" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
+		<properties></properties>
+		<testcase classname="Specification Heading" name="Patch task status" time="0.015"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+	<testsuite id="5" tests="2" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/taks_update.spec" time="0.498" timestamp="2025-09-03T11:47:55" name="Specification Heading" errors="0" hostname="ip-10-1-32-36.eu-central-1.compute.internal">
+		<properties></properties>
+		<testcase classname="Specification Heading" name="Update task with correct argument" time="0.486"></testcase>
 		<testcase classname="Specification Heading" name="Update task with incorret argument" time="0.012"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
