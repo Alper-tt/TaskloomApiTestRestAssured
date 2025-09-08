@@ -31,13 +31,13 @@
    
   <div class="report_chart">
     <div class="chart">
-      <svg id="pie-chart" data-results="0,5,0" data-total="5">
+      <svg id="pie-chart" data-results="0,1,0" data-total="1">
         <path class="status failed" />
-        <path class="shadow failed" data-status="failed"><title>Failed: 0/5</title></path>
+        <path class="shadow failed" data-status="failed"><title>Failed: 0/1</title></path>
         <path class="status passed" />
-        <path class="shadow passed" data-status="passed"><title>Passed: 5/5</title></path>
+        <path class="shadow passed" data-status="passed"><title>Passed: 1/1</title></path>
         <path class="status skipped" />
-        <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/5</title></path>
+        <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/1</title></path>
       </svg>
     </div>
   </div>
@@ -45,15 +45,15 @@
    
   <div class="report_test-results">
     <div class="report_test-result specs">
-        <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">5</span></div>
+        <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">1</span></div>
         <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">0</span></div>
-        <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">5</span></div>
+        <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">1</span></div>
         <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
     </div>
     <div class="report_test-result scenarios">
-        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">8</span></div>
+        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">4</span></div>
         <div class="fail scenario-stats" data-status="failed"><span class="value">0</span></div>
-        <div class="pass scenario-stats" data-status="passed"><span class="value">8</span></div>
+        <div class="pass scenario-stats" data-status="passed"><span class="value">4</span></div>
         <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
     </div>
   </div>
@@ -72,11 +72,11 @@
     </li>
     <li>
       <label>Total Time </label>
-      <span>00:00:01</span>
+      <span>00:00:00</span>
     </li>
     <li>
       <label>Generated On </label>
-      <span>Sep 3, 2025 at 12:00pm</span>
+      <span>Sep 8, 2025 at 10:55am</span>
     </li>
   </ul>
 
@@ -113,42 +113,6 @@
       <div id="listOfSpecifications">
         <ul id="scenarios" class="spec-list">
         
-          <a href="task_create.html">
-             
-              <li class="passed spec-name">
-            
-              <span id="scenarioName" class="scenarioname">Specification Heading</span>
-              <span id="time" class="time">00:00:00</span>
-            </li>
-          </a>
-          
-          <a href="task_delete.html">
-             
-              <li class="passed spec-name">
-            
-              <span id="scenarioName" class="scenarioname">Specification Heading</span>
-              <span id="time" class="time">00:00:00</span>
-            </li>
-          </a>
-          
-          <a href="task_get_list.html">
-             
-              <li class="passed spec-name">
-            
-              <span id="scenarioName" class="scenarioname">Specification Heading</span>
-              <span id="time" class="time">00:00:00</span>
-            </li>
-          </a>
-          
-          <a href="task_status.html">
-             
-              <li class="passed spec-name">
-            
-              <span id="scenarioName" class="scenarioname">Specification Heading</span>
-              <span id="time" class="time">00:00:00</span>
-            </li>
-          </a>
-          
           <a href="taks_update.html">
              
               <li class="passed spec-name">
@@ -173,7 +137,7 @@
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
             <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
-            <li class="pass"><span class="value">2</span><span class="txt">Passed</span></li>
+            <li class="pass"><span class="value">4</span><span class="txt">Passed</span></li>
             <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
@@ -282,11 +246,11 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
         <div>
           <table>
   <tr>
-    <th>id</th><th>title</th><th>description</th><th>status</th>
+    <th>id</th><th>title</th><th>description</th><th>status</th><th>assignedUserId</th>
   </tr>
   <tbody>
     
-    <tr><td>1</td><td>make calls</td><td>John, Alice</td><td>DONE</td></tr>
+    <tr><td>1</td><td>make calls</td><td>John, Alice</td><td>DONE</td><td>3</td></tr>
     
   </tbody>
 </table>
@@ -850,11 +814,11 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
         <div>
           <table>
   <tr>
-    <th>id</th><th>title</th><th>description</th><th>status</th>
+    <th>id</th><th>title</th><th>description</th><th>status</th><th>assignedUserId</th>
   </tr>
   <tbody>
     
-    <tr><td>1</td><td>make calls</td><td>do</td><td>TODO</td></tr>
+    <tr><td>1</td><td>make calls</td><td>do</td><td>TODO</td><td>3</td></tr>
     
   </tbody>
 </table>
@@ -934,6 +898,392 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   
     
       <span class="parameter">"400"</span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+	
+	</div>
+
+      
+        
+	
+  <div class="scenario-container passed">
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Update Task with not exist user id</h3>
+    
+    <span class="time">00:00:00</span>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+  
+	
+
+  
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Update task that 
+      </span>
+    
+  
+    
+      <div class="inline-table">
+        <div>
+          <table>
+  <tr>
+    <th>id</th><th>title</th><th>description</th><th>status</th><th>assignedUserId</th>
+  </tr>
+  <tbody>
+    
+    <tr><td>1</td><td>make calls</td><td>John, Alice</td><td>TODO</td><td>10</td></tr>
+    
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Response status code should be 
+      </span>
+    
+  
+    
+      <span class="parameter">"400"</span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+	
+	</div>
+
+      
+        
+	
+  <div class="scenario-container passed">
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Update Task without user id</h3>
+    
+    <span class="time">00:00:00</span>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+  
+	
+
+  
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Update task that 
+      </span>
+    
+  
+    
+      <div class="inline-table">
+        <div>
+          <table>
+  <tr>
+    <th>id</th><th>title</th><th>description</th><th>status</th>
+  </tr>
+  <tbody>
+    
+    <tr><td>1</td><td>make calls</td><td>John, Alice</td><td>TODO</td></tr>
+    
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    <span></span>
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Response status code should be 
+      </span>
+    
+  
+    
+      <span class="parameter">"422"</span>
     
   
   </div>

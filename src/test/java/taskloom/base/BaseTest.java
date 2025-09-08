@@ -12,6 +12,7 @@ import java.util.Arrays;
 import static org.hamcrest.Matchers.lessThan;
 
 public class BaseTest {
+
     RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("http://localhost:8080")
             .setAccept("application/json")

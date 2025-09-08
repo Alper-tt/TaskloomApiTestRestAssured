@@ -1,4 +1,4 @@
-Specification Heading
+Update Task Status
 =====================
 Created by alper on 2.09.2025
 
@@ -12,5 +12,5 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
     |1 |DONE  |
 * Response status code should be "202"
 * Response type should be "TaskResponse"
-* Task "id" should be "1"
-* Task "status" should be "DONE"
+* "id" should be "1" in response
+* "status" should be "DONE" in response

@@ -14,4 +14,5 @@ public class TaskUpdateRequest {
     private String title;
     private String description;
     private TaskStatus status;
+    private Integer assignedUserId;
 }

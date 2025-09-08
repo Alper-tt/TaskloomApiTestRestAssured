@@ -12,6 +12,10 @@ import taskloom.model.TaskStatus;
 @NoArgsConstructor
 public class TaskCreateRequest {
     private String title;
+
     private String description;
+
     private TaskStatus status;
+
+    private Integer assignedUserId;
 }

@@ -8,10 +8,9 @@ import taskloom.model.request.TaskUpdateRequest;
 
 import static io.restassured.RestAssured.given;
 
-public class BaseMethods extends BaseTest {
+public class TaskMethods extends BaseTest {
 
     public Response createTask(TaskCreateRequest taskCreateRequest) {
-
         return given()
                 .spec(requestSpec)
                 .contentType(ContentType.JSON)

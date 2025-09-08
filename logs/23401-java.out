@@ -1,0 +1,825 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (file:/Users/alper/.m2/repository/io/grpc/grpc-netty-shaded/1.72.0/grpc-netty-shaded-1.72.0.jar)
+WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+{"logLevel":"debug","message":"gauge-java took 284milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 284"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 55937"}
+{"logLevel":"info","message":"Listening on port:55937"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.createUser' and 'taskloom.steps.StepImplementation.createUser'"}
+{"logLevel":"debug","message":"Found Create user that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.createTask' and 'taskloom.steps.StepImplementation.createTask'"}
+{"logLevel":"debug","message":"Found Create task that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.checkStatusCode' and 'taskloom.steps.StepImplementation.checkStatusCode'"}
+{"logLevel":"debug","message":"Found Response status code should be {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.checkField' and 'taskloom.steps.StepImplementation.checkField'"}
+{"logLevel":"debug","message":"Found {} should be {} in response in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.deleteTask' and 'taskloom.steps.StepImplementation.deleteTask'"}
+{"logLevel":"debug","message":"Found Delete task by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.updateTask' and 'taskloom.steps.StepImplementation.updateTask'"}
+{"logLevel":"debug","message":"Found Update task that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.changeTaskStatusById' and 'taskloom.steps.StepImplementation.changeTaskStatusById'"}
+{"logLevel":"debug","message":"Found Patch task by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getAllTasks' and 'taskloom.steps.StepImplementation.getAllTasks'"}
+{"logLevel":"debug","message":"Found Get all tasks in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.checkResponseType' and 'taskloom.steps.StepImplementation.checkResponseType'"}
+{"logLevel":"debug","message":"Found Response type should be {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.updateUser' and 'taskloom.steps.StepImplementation.updateUser'"}
+{"logLevel":"debug","message":"Found Update user that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.deleteUser' and 'taskloom.steps.StepImplementation.deleteUser'"}
+{"logLevel":"debug","message":"Found Delete user by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getTaskById' and 'taskloom.steps.StepImplementation.getTaskById'"}
+{"logLevel":"debug","message":"Found Get task by id {} in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGet task by id {} : public void getTaskById(Integer id)"}
+{"logLevel":"debug","message":"\tPatch task by id {} : public void changeTaskStatusById(Table table)"}
+{"logLevel":"debug","message":"\tCreate task that {} : public void createTask(Table table)"}
+{"logLevel":"debug","message":"\t{} should be {} in response : public void checkField(String field, String value)"}
+{"logLevel":"debug","message":"\tCreate user that {} : public void createUser(Table table)"}
+{"logLevel":"debug","message":"\tDelete task by id {} : public void deleteTask(Integer id)"}
+{"logLevel":"debug","message":"\tGet all tasks : public void getAllTasks()"}
+{"logLevel":"debug","message":"\tResponse status code should be {} : public void checkStatusCode(Integer statusCode)"}
+{"logLevel":"debug","message":"\tUpdate user that {} : public void updateUser(Table table)"}
+{"logLevel":"debug","message":"\tResponse type should be {} : public void checkResponseType(String type)"}
+{"logLevel":"debug","message":"\tDelete user by id {} : public void deleteUser(Integer id)"}
+{"logLevel":"debug","message":"\tUpdate task that {} : public void updateTask(Table table)"}
+{"logLevel":"debug","message":"Executing 'Update task that {}' using 'class taskloom.steps.StepImplementation.updateTask"}
+Request method:	PUT
+Request URI:	http://localhost:8080/tasks/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "make calls",
+    "description": "John, Alice",
+    "status": "DONE",
+    "assignedUserId": 3
+}
+HTTP/1.1 202 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 1,
+    "title": "make calls",
+    "description": "John, Alice",
+    "status": "DONE",
+    "createdAt": "2025-09-08T11:10:31.113203Z",
+    "updatedAt": "2025-09-08T11:10:39.021770Z"
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing 'Update task that {}' using 'class taskloom.steps.StepImplementation.updateTask"}
+Request method:	PUT
+Request URI:	http://localhost:8080/tasks/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "make calls",
+    "description": "do",
+    "status": "TODO",
+    "assignedUserId": 3
+}
+HTTP/1.1 400 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Connection: close
+
+{
+    "message": "Argument not valid.",
+    "statusCode": 400
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Update task that {}' using 'class taskloom.steps.StepImplementation.updateTask"}
+Request method:	PUT
+Request URI:	http://localhost:8080/tasks/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "make calls",
+    "description": "John, Alice",
+    "status": "TODO",
+    "assignedUserId": 10
+}
+HTTP/1.1 400 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Connection: close
+
+{
+    "message": "400 BAD_REQUEST \"User not found\"",
+    "statusCode": 400
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Update task that {}' using 'class taskloom.steps.StepImplementation.updateTask"}
+Request method:	PUT
+Request URI:	http://localhost:8080/tasks/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "make calls",
+    "description": "John, Alice",
+    "status": "TODO",
+    "assignedUserId": null
+}
+HTTP/1.1 422 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "message": "The given id must not be null",
+    "statusCode": 422
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask"}
+Request method:	POST
+Request URI:	http://localhost:8080/tasks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "grocery shopping",
+    "description": "milk, tea, coffee",
+    "status": "TODO",
+    "assignedUserId": 3
+}
+HTTP/1.1 201 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 49,
+    "title": "grocery shopping",
+    "description": "milk, tea, coffee",
+    "status": "TODO",
+    "createdAt": "2025-09-08T11:10:39.298389Z",
+    "updatedAt": "2025-09-08T11:10:39.298389Z"
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask"}
+Request method:	POST
+Request URI:	http://localhost:8080/tasks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "homeworks",
+    "description": "math, science, history",
+    "status": null,
+    "assignedUserId": 3
+}
+HTTP/1.1 201 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 50,
+    "title": "homeworks",
+    "description": "math, science, history",
+    "status": "TODO",
+    "createdAt": "2025-09-08T11:10:39.332205Z",
+    "updatedAt": "2025-09-08T11:10:39.332205Z"
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask"}
+Request method:	POST
+Request URI:	http://localhost:8080/tasks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "homeworks",
+    "description": "math, science, history",
+    "status": null,
+    "assignedUserId": 10
+}
+HTTP/1.1 400 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Connection: close
+
+{
+    "message": "400 BAD_REQUEST \"User not found\"",
+    "statusCode": 400
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Create task that {}' using 'class taskloom.steps.StepImplementation.createTask"}
+Request method:	POST
+Request URI:	http://localhost:8080/tasks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "homeworks",
+    "description": "math, science, history",
+    "status": null,
+    "assignedUserId": null
+}
+HTTP/1.1 422 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "message": "The given id must not be null",
+    "statusCode": 422
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Delete task by id {}' using 'class taskloom.steps.StepImplementation.deleteTask"}
+Request method:	DELETE
+Request URI:	http://localhost:8080/tasks/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing 'Get task by id {}' using 'class taskloom.steps.StepImplementation.getTaskById"}
+Request method:	GET
+Request URI:	http://localhost:8080/tasks/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 1,
+    "title": "make calls",
+    "description": "John, Alice",
+    "status": "DONE",
+    "createdAt": "2025-09-08T11:10:31.113203Z",
+    "updatedAt": "2025-09-08T11:10:39.021770Z"
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing 'Get all tasks' using 'class taskloom.steps.StepImplementation.getAllTasks"}
+Request method:	GET
+Request URI:	http://localhost:8080/tasks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+[
+    {
+        "id": 1,
+        "title": "make calls",
+        "description": "John, Alice",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:39.021770Z"
+    },
+    {
+        "id": 3,
+        "title": "Fix login bug",
+        "description": "Resolve OAuth NullPointerException",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 4,
+        "title": "Plan sprint",
+        "description": "Prepare backlog and estimates",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 5,
+        "title": "Refactor service",
+        "description": "Split mapping logic into helper class",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 6,
+        "title": "Update README",
+        "description": "Add project description and usage guide",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 7,
+        "title": "Team meeting",
+        "description": "Discuss project milestones",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 8,
+        "title": "Implement login",
+        "description": "Add JWT authentication",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 9,
+        "title": "Database backup",
+        "description": "Schedule daily backup job",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 10,
+        "title": "Review PR #42",
+        "description": "Code review for new feature branch",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 11,
+        "title": "Deploy to staging",
+        "description": "Push latest build to staging server",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 12,
+        "title": "Design API docs",
+        "description": "Write Swagger annotations",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 13,
+        "title": "Research caching",
+        "description": "Evaluate Redis integration",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 14,
+        "title": "Optimize query",
+        "description": "Improve performance of report endpoint",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 15,
+        "title": "Bug triage",
+        "description": "Classify open GitHub issues",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 16,
+        "title": "Shopping list",
+        "description": "Buy vegetables and fruits",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 17,
+        "title": "Morning workout",
+        "description": "30 min cardio and stretching",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 18,
+        "title": "Read book",
+        "description": "Continue reading Clean Code",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 19,
+        "title": "Setup CI",
+        "description": "Add GitHub Actions pipeline",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 20,
+        "title": "Configure Docker",
+        "description": "Write Dockerfile for backend",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 21,
+        "title": "Fix CSS",
+        "description": "Correct button alignment",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 22,
+        "title": "Buy birthday gift",
+        "description": "Get present for Sarah",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 23,
+        "title": "Email client",
+        "description": "Send project update",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 24,
+        "title": "Pay bills",
+        "description": "Electricity and water payment",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 25,
+        "title": "Clean desk",
+        "description": "Organize workspace",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 26,
+        "title": "Refactor tests",
+        "description": "Improve unit test coverage",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 27,
+        "title": "Update dependencies",
+        "description": "Bump Spring Boot version",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 28,
+        "title": "Plan holiday",
+        "description": "Check flights and hotels",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 29,
+        "title": "Organize photos",
+        "description": "Clean up Google Drive albums",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 30,
+        "title": "Water plants",
+        "description": "Living room and balcony plants",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 31,
+        "title": "Meditation",
+        "description": "10 minutes daily meditation",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 32,
+        "title": "Learn Docker",
+        "description": "Follow online tutorial",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 33,
+        "title": "Prepare slides",
+        "description": "Presentation for Monday meeting",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 34,
+        "title": "Fix search bug",
+        "description": "Results not sorted properly",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 35,
+        "title": "Add logging",
+        "description": "Integrate SLF4J and Logback",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 36,
+        "title": "Polish UI",
+        "description": "Improve navbar styling",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 37,
+        "title": "Doctor appointment",
+        "description": "Annual health check",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 38,
+        "title": "Car service",
+        "description": "Oil change and inspection",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 39,
+        "title": "Weekly review",
+        "description": "Reflect on goals and progress",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 40,
+        "title": "Cook dinner",
+        "description": "Pasta with salad",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 41,
+        "title": "Refactor repo",
+        "description": "Split modules into separate repos",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 42,
+        "title": "Test API",
+        "description": "Postman regression tests",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 43,
+        "title": "Update wiki",
+        "description": "Add troubleshooting guide",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 44,
+        "title": "Brainstorm",
+        "description": "Ideas for new side project",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 45,
+        "title": "File taxes",
+        "description": "Prepare documents",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 46,
+        "title": "Laundry",
+        "description": "Wash and fold clothes",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 47,
+        "title": "Plan meetup",
+        "description": "Organize team dinner",
+        "status": "IN_PROGRESS",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 48,
+        "title": "Check emails",
+        "description": "Inbox zero routine",
+        "status": "DONE",
+        "createdAt": "2025-09-08T11:10:31.113203Z",
+        "updatedAt": "2025-09-08T11:10:31.113203Z"
+    },
+    {
+        "id": 49,
+        "title": "grocery shopping",
+        "description": "milk, tea, coffee",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:39.298389Z",
+        "updatedAt": "2025-09-08T11:10:39.298389Z"
+    },
+    {
+        "id": 50,
+        "title": "homeworks",
+        "description": "math, science, history",
+        "status": "TODO",
+        "createdAt": "2025-09-08T11:10:39.332205Z",
+        "updatedAt": "2025-09-08T11:10:39.332205Z"
+    }
+]
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing 'Patch task by id {}' using 'class taskloom.steps.StepImplementation.changeTaskStatusById"}
+Request method:	PATCH
+Request URI:	http://localhost:8080/tasks/1/status
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "taskStatus": "DONE"
+}
+HTTP/1.1 202 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 11:10:39 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 1,
+    "title": "make calls",
+    "description": "John, Alice",
+    "status": "DONE",
+    "createdAt": "2025-09-08T11:10:31.113203Z",
+    "updatedAt": "2025-09-08T11:10:39.021770Z"
+}
+{"logLevel":"debug","message":"Executing 'Response status code should be {}' using 'class taskloom.steps.StepImplementation.checkStatusCode"}
+{"logLevel":"debug","message":"Executing 'Response type should be {}' using 'class taskloom.steps.StepImplementation.checkResponseType"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

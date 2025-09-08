@@ -1,0 +1,95 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4 (file:/Users/alper/.m2/repository/io/grpc/grpc-netty-shaded/1.72.0/grpc-netty-shaded-1.72.0.jar)
+WARNING: Please consider reporting this to the maintainers of class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+{"logLevel":"debug","message":"gauge-java took 329milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 329"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 57769"}
+{"logLevel":"info","message":"Listening on port:57769"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getUserById' and 'taskloom.steps.StepImplementation.getUserById'"}
+{"logLevel":"debug","message":"Found Get user by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.checkStatusCode' and 'taskloom.steps.StepImplementation.checkStatusCode'"}
+{"logLevel":"debug","message":"Found Response status code should be {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.checkField' and 'taskloom.steps.StepImplementation.checkField'"}
+{"logLevel":"debug","message":"Found {} should be {} in response in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.deleteTask' and 'taskloom.steps.StepImplementation.deleteTask'"}
+{"logLevel":"debug","message":"Found Delete task by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.changeTaskStatusById' and 'taskloom.steps.StepImplementation.changeTaskStatusById'"}
+{"logLevel":"debug","message":"Found Patch task by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.checkResponseType' and 'taskloom.steps.StepImplementation.checkResponseType'"}
+{"logLevel":"debug","message":"Found Response type should be {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.updateUser' and 'taskloom.steps.StepImplementation.updateUser'"}
+{"logLevel":"debug","message":"Found Update user that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.deleteUser' and 'taskloom.steps.StepImplementation.deleteUser'"}
+{"logLevel":"debug","message":"Found Delete user by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getTaskById' and 'taskloom.steps.StepImplementation.getTaskById'"}
+{"logLevel":"debug","message":"Found Get task by id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.createUser' and 'taskloom.steps.StepImplementation.createUser'"}
+{"logLevel":"debug","message":"Found Create user that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.createTask' and 'taskloom.steps.StepImplementation.createTask'"}
+{"logLevel":"debug","message":"Found Create task that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getUserByUsername' and 'taskloom.steps.StepImplementation.getUserByUsername'"}
+{"logLevel":"debug","message":"Found Get user by username {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getUserByMail' and 'taskloom.steps.StepImplementation.getUserByMail'"}
+{"logLevel":"debug","message":"Found Get user by mail {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getAllUsers' and 'taskloom.steps.StepImplementation.getAllUsers'"}
+{"logLevel":"debug","message":"Found Get all users in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.updateTask' and 'taskloom.steps.StepImplementation.updateTask'"}
+{"logLevel":"debug","message":"Found Update task that {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'taskloom.steps.StepImplementation.getAllTasks' and 'taskloom.steps.StepImplementation.getAllTasks'"}
+{"logLevel":"debug","message":"Found Get all tasks in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tGet task by id {} : public void getTaskById(Integer id)"}
+{"logLevel":"debug","message":"\tPatch task by id {} : public void changeTaskStatusById(Table table)"}
+{"logLevel":"debug","message":"\tCreate task that {} : public void createTask(Table table)"}
+{"logLevel":"debug","message":"\t{} should be {} in response : public void checkField(String field, String value)"}
+{"logLevel":"debug","message":"\tCreate user that {} : public void createUser(Table table)"}
+{"logLevel":"debug","message":"\tDelete task by id {} : public void deleteTask(Integer id)"}
+{"logLevel":"debug","message":"\tGet all tasks : public void getAllTasks()"}
+{"logLevel":"debug","message":"\tResponse status code should be {} : public void checkStatusCode(Integer statusCode)"}
+{"logLevel":"debug","message":"\tUpdate user that {} : public void updateUser(Table table)"}
+{"logLevel":"debug","message":"\tResponse type should be {} : public void checkResponseType(String type)"}
+{"logLevel":"debug","message":"\tDelete user by id {} : public void deleteUser(Integer id)"}
+{"logLevel":"debug","message":"\tGet all users : public void getAllUsers()"}
+{"logLevel":"debug","message":"\tUpdate task that {} : public void updateTask(Table table)"}
+{"logLevel":"debug","message":"\tGet user by id {} : public void getUserById(Integer id)"}
+{"logLevel":"debug","message":"\tGet user by username {} : public void getUserByUsername(String username)"}
+{"logLevel":"debug","message":"\tGet user by mail {} : public void getUserByMail(String mail)"}
+{"logLevel":"debug","message":"Executing 'Get user by username {}' using 'class taskloom.steps.StepImplementation.getUserByUsername"}
+Request method:	GET
+Request URI:	http://localhost:8080/user/username/test
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 08 Sep 2025 12:07:42 GMT
+Connection: close
+
+{
+    "timestamp": "2025-09-08T12:07:42.737+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "trace": "org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 2 results were returned\n\tat org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:305)\n\tat org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)\n\tat org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:244)\n\tat org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)\n\tat org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)\n\tat org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)\n\tat org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)\n\tat jdk.proxy4/jdk.proxy4.$Proxy166.findByUsername(Unknown Source)\n\tat com.taskloom.service.UserService.findByUsername(UserService.java:61)\n\tat com.taskloom.controller.UserController.getUserByUsername(UserController.java:50)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\n\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\n\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n\tat org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\n\tat java.base/java.lang.Thread.run(Thread.java:1447)\nCaused by: org.hibernate.NonUniqueResultException: Query did not return a unique result: 2 results were returned\n\tat org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:298)\n\tat org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:281)\n\tat org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:224)\n\tat org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:93)\n\tat org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152)\n\tat org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140)\n\tat org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)\n\tat org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)\n\tat org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:170)\n\tat org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)\n\tat org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)\n\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)\n\tat org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)\n\t... 59 more\n",
+    "message": "Query did not return a unique result: 2 results were returned",
+    "path": "/user/username/test"
+}
+{"logLevel":"debug","message":"Executing '{} should be {} in response' using 'class taskloom.steps.StepImplementation.checkField"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
