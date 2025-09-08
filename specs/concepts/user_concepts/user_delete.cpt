@@ -1,0 +1,4 @@
+# Delete user by id
+* Delete user by id "3"
+* Response status code should be "204"
+* Response type should be "String"

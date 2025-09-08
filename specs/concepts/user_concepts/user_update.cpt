@@ -1,11 +1,4 @@
-Update User
-=====================
-Created by alper on 8.09.2025
-
-This is an executable specification file which follows markdown syntax.
-Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-
-## Update user with valid arguments
+# Update user with valid arguments
 * Update user that
     |id|username|mail    |
     |--|--------|--------|
@@ -16,7 +9,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * "username" should be "example" in response
 * "mail" should be "ex@ex.co" in response
 
-## Update user with invalid username
+# Update user with invalid username
 * Create user that
     |id|username|mail    |
     |--|--------|--------|
@@ -24,7 +17,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 
 * Response status code should be "400"
 
-## Update user with invalid mail
+# Update user with invalid mail
 * Create user that
     |id|username|mail    |
     |--|--------|--------|

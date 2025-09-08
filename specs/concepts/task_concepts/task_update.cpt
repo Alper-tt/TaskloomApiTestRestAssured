@@ -1,11 +1,4 @@
-Update Task
-=====================
-Created by alper on 2.09.2025
-
-This is an executable specification file which follows markdown syntax.
-Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-
-## Update task with valid arguments
+# Update task with valid arguments
 * Update task that
   |id|title     |description|status|assignedUserId|
   |--|----------|-----------|------|--------------|
@@ -18,8 +11,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * "description" should be "John, Alice" in response
 * "status" should be "DONE" in response
 
-
-## Update task with incorrect description
+# Update task with incorrect description
 * Update task that
   |id|title     |description|status|assignedUserId|
   |--|----------|-----------|------|--------------|
@@ -27,7 +19,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 
 * Response status code should be "400"
 
-## Update Task with not exist user id
+# Update Task with not exist user id
 * Update task that
   |id|title     |description|status|assignedUserId|
   |--|----------|-----------|------|--------------|
@@ -35,7 +27,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 
 * Response status code should be "400"
 
-## Update Task without user id
+# Update Task without user id
 * Update task that
   |id|title     |description|status|
   |--|----------|-----------|------|

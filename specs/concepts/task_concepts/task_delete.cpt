@@ -1,0 +1,4 @@
+# Delete task by id
+* Delete task by id "2"
+* Response status code should be "204"
+* Response type should be "String"

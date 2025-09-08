@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Create Task":["specs/task_specs/task_create.html"],"Delete Task":["specs/task_specs/task_delete.html"],"Get Tasks":["specs/task_specs/task_get_list.html"],"Update Task":["specs/task_specs/taks_update.html"],"Update Task Status":["specs/task_specs/task_status.html"]}};
+var index = {"Tags":{},"Specs":{"Task CRUD Actions":["specs/task_crud.html"],"User CRUD Actions":["specs/user_crud.html"]}};

@@ -1,0 +1,9 @@
+# Patch task status
+* Patch task by id
+    |id|status|
+    |--|------|
+    |1 |DONE  |
+* Response status code should be "202"
+* Response type should be "TaskResponse"
+* "id" should be "1" in response
+* "status" should be "DONE" in response

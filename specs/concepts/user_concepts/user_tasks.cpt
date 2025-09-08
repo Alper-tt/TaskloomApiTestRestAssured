@@ -1,0 +1,4 @@
+# Get tasks of user by user id
+* Get tasks of user by user id "1"
+* Response status code should be "200"
+* Response type should be "List"

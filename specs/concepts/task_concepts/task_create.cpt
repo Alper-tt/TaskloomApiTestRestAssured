@@ -1,11 +1,4 @@
-Create Task
-=====================
-Created by alper on 2.09.2025
-
-This is an executable specification file which follows markdown syntax.
-Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-     
-## Create task with status
+# Create task with status
 * Create task that
   |title           |description       |status|assignedUserId|
   |----------------|------------------|------|--------------|
@@ -17,7 +10,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * "description" should be "milk, tea, coffee" in response
 * "status" should be "TODO" in response
 
-## Create Task without status response should be TODO
+# Create Task without status response should be TODO
 * Create task that
   |title           |description           |assignedUserId|
   |----------------|----------------------|--------------|
@@ -29,7 +22,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 * "description" should be "math, science, history" in response
 * "status" should be "TODO" in response
 
-## Create Task with invalid user id
+# Create Task with invalid user id
 * Create task that
   |title           |description           |assignedUserId|
   |----------------|----------------------|--------------|
@@ -37,7 +30,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 
 * Response status code should be "400"
 
-## Create Task without user id
+# Create Task without user id
 * Create task that
   |title           |description           |
   |----------------|----------------------|
