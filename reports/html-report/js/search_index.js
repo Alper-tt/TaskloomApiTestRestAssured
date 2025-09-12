@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Task CRUD Actions":["specs/task_crud.html"],"User CRUD Actions":["specs/user_crud.html"]}};
+var index = {"Tags":{},"Specs":{"Auth Actions":["specs/auth.html"],"Task CRUD Actions":["specs/task_crud.html"],"User CRUD Actions":["specs/user_crud.html"]}};

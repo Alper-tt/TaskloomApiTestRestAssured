@@ -4,6 +4,7 @@ import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.Table;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
+import taskloom.base.AuthMethods;
 import taskloom.base.UserMethods;
 import taskloom.model.TaskStatus;
 import taskloom.model.request.*;
@@ -13,6 +14,7 @@ public class StepImplementation {
 
     TaskMethods taskMethods = new TaskMethods();
     UserMethods userMethods = new UserMethods();
+    AuthMethods authMethods = new AuthMethods();
     Response response;
 
     @Step("Create task that <table>")
@@ -126,5 +128,15 @@ public class StepImplementation {
     @Step("Get tasks of user by user id <id>")
     public void getTasksOfUserById(Integer id){
         response = userMethods.getTasksOfUserById(id);
+    }
+
+    @Step("Make login request <table>")
+    public void login(Table table) {
+        response = authMethods.login(table);
+    }
+
+    @Step("Make register request <table>")
+    public void register(Table table){
+        response = authMethods.register(table);
     }
 }
