@@ -1,5 +1,6 @@
 package taskloom.base;
 
+import com.thoughtworks.gauge.Table;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import taskloom.model.request.UserCreateRequest;
@@ -18,7 +19,11 @@ public class UserMethods extends BaseTest{
                 .post("/user");
     }
 
-    public Response updateUser(Integer id, UserUpdateRequest userUpdateRequest) {
+    public Response updateUser(Table table) {
+        UserUpdateRequest userUpdateRequest = new UserUpdateRequest();
+        userUpdateRequest.setUsername(table.getColumnValues("username").get(0));
+        userUpdateRequest.setMail(table.getColumnValues("mail").get(0));
+        int id = Integer.parseInt(table.getColumnValues("id").get(0));
         return given()
                 .spec(requestSpec)
                 .contentType(ContentType.JSON)

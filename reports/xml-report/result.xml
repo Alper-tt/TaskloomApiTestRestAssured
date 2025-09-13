@@ -1,29 +1,29 @@
 <testsuites>
-	<testsuite id="1" tests="6" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/user_crud.spec" time="0.206" timestamp="2025-09-13T17:07:05" name="User CRUD Actions" errors="0" hostname="Alper-MacBook-Air-2.local">
+	<testsuite id="1" tests="6" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/user_crud.spec" time="0.215" timestamp="2025-09-13T17:23:07" name="User CRUD Actions" errors="0" hostname="Alper-MacBook-Air-2.local">
 		<properties></properties>
-		<testcase classname="User CRUD Actions" name="Auth Actions" time="0.084"></testcase>
-		<testcase classname="User CRUD Actions" name="User Create Actions" time="0.033"></testcase>
-		<testcase classname="User CRUD Actions" name="User Delete Actions" time="0.012"></testcase>
-		<testcase classname="User CRUD Actions" name="User Get Actions" time="0.040"></testcase>
-		<testcase classname="User CRUD Actions" name="Get tasks of user" time="0.007"></testcase>
-		<testcase classname="User CRUD Actions" name="User Update Actions" time="0.030"></testcase>
+		<testcase classname="User CRUD Actions" name="Auth Actions" time="0.085"></testcase>
+		<testcase classname="User CRUD Actions" name="User Create Actions" time="0.031"></testcase>
+		<testcase classname="User CRUD Actions" name="User Delete Actions" time="0.011"></testcase>
+		<testcase classname="User CRUD Actions" name="User Get Actions" time="0.038"></testcase>
+		<testcase classname="User CRUD Actions" name="Get tasks of user" time="0.008"></testcase>
+		<testcase classname="User CRUD Actions" name="User Update Actions" time="0.042"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>
-	<testsuite id="2" tests="2" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/auth.spec" time="0.405" timestamp="2025-09-13T17:07:05" name="Auth Actions" errors="0" hostname="Alper-MacBook-Air-2.local">
+	<testsuite id="2" tests="2" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/auth.spec" time="0.411" timestamp="2025-09-13T17:23:07" name="Auth Actions" errors="0" hostname="Alper-MacBook-Air-2.local">
 		<properties></properties>
-		<testcase classname="Auth Actions" name="User Register Actions" time="0.231"></testcase>
+		<testcase classname="Auth Actions" name="User Register Actions" time="0.237"></testcase>
 		<testcase classname="Auth Actions" name="User Login Actions" time="0.174"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>
-	<testsuite id="3" tests="5" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_crud.spec" time="0.326" timestamp="2025-09-13T17:07:05" name="Task CRUD Actions" errors="0" hostname="Alper-MacBook-Air-2.local">
+	<testsuite id="3" tests="5" failures="0" package="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_crud.spec" time="0.320" timestamp="2025-09-13T17:23:07" name="Task CRUD Actions" errors="0" hostname="Alper-MacBook-Air-2.local">
 		<properties></properties>
-		<testcase classname="Task CRUD Actions" name="Auth Actions" time="0.105"></testcase>
-		<testcase classname="Task CRUD Actions" name="Task Create Actions" time="0.087"></testcase>
-		<testcase classname="Task CRUD Actions" name="Task Delete Actions" time="0.022"></testcase>
-		<testcase classname="Task CRUD Actions" name="Task Get Actions" time="0.052"></testcase>
-		<testcase classname="Task CRUD Actions" name="Task Update Actions" time="0.060"></testcase>
+		<testcase classname="Task CRUD Actions" name="Auth Actions" time="0.103"></testcase>
+		<testcase classname="Task CRUD Actions" name="Task Create Actions" time="0.080"></testcase>
+		<testcase classname="Task CRUD Actions" name="Task Delete Actions" time="0.028"></testcase>
+		<testcase classname="Task CRUD Actions" name="Task Get Actions" time="0.055"></testcase>
+		<testcase classname="Task CRUD Actions" name="Task Update Actions" time="0.054"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>

@@ -1,7 +1,9 @@
 package taskloom.base;
 
+import com.thoughtworks.gauge.Table;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import taskloom.model.TaskStatus;
 import taskloom.model.request.TaskCreateRequest;
 import taskloom.model.request.TaskStatusUpdate;
 import taskloom.model.request.TaskUpdateRequest;
@@ -10,11 +12,21 @@ import static io.restassured.RestAssured.given;
 
 public class TaskMethods extends BaseTest {
 
-    public Response createTask(TaskCreateRequest taskCreateRequest) {
+    public Response createTask(Table table) {
+        TaskCreateRequest createRequest = new TaskCreateRequest();
+
+        createRequest.setTitle(table.getColumnValues("title").get(0));
+        createRequest.setDescription(table.getColumnValues("description").get(0));
+        if (!table.getColumnValues("status").isEmpty()){
+            createRequest.setStatus(TaskStatus.valueOf(table.getColumnValues("status").get(0)));
+        }
+        if (!table.getColumnValues("assignedUserId").isEmpty()){
+            createRequest.setAssignedUserId(Integer.parseInt(table.getColumnValues("assignedUserId").get(0)));
+        }
         return given()
                 .spec(requestSpec)
                 .contentType(ContentType.JSON)
-                .body(taskCreateRequest)
+                .body(createRequest)
                 .when()
                 .post("/tasks");
     }
@@ -40,7 +52,10 @@ public class TaskMethods extends BaseTest {
                 .delete("/tasks/" + id);
     }
 
-    public Response updateTaskStatus(Integer id, TaskStatusUpdate taskStatusUpdate) {
+    public Response updateTaskStatus(Table table) {
+        TaskStatusUpdate taskStatusUpdate = new TaskStatusUpdate();
+        taskStatusUpdate.setTaskStatus(TaskStatus.valueOf(table.getColumnValues("status").get(0)));
+        int id = Integer.parseInt(table.getColumnValues("id").get(0));
         return given()
                 .spec(requestSpec)
                 .contentType(ContentType.JSON)
@@ -49,11 +64,21 @@ public class TaskMethods extends BaseTest {
                 .patch("/tasks/"+id+"/status");
     }
 
-    public Response updateTask(Integer id, TaskUpdateRequest taskUpdateRequest) {
+    public Response updateTask(Table table) {
+        TaskUpdateRequest updateRequest = new TaskUpdateRequest();
+
+        updateRequest.setTitle(table.getColumnValues("title").get(0));
+        updateRequest.setDescription(table.getColumnValues("description").get(0));
+        updateRequest.setStatus(TaskStatus.valueOf(table.getColumnValues("status").get(0)));
+        if (!table.getColumnValues("assignedUserId").isEmpty()){
+            updateRequest.setAssignedUserId(Integer.parseInt(table.getColumnValues("assignedUserId").get(0)));
+        }
+        int id = Integer.parseInt(table.getColumnValues("id").get(0));
+
         return given()
                 .contentType(ContentType.JSON)
                 .spec(requestSpec)
-                .body(taskUpdateRequest)
+                .body(updateRequest)
                 .when()
                 .put("tasks/" + id);
     }

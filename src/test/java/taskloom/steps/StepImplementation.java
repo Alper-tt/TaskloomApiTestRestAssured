@@ -6,7 +6,6 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import taskloom.base.AuthMethods;
 import taskloom.base.UserMethods;
-import taskloom.model.TaskStatus;
 import taskloom.model.request.*;
 import taskloom.base.TaskMethods;
 
@@ -16,7 +15,6 @@ public class StepImplementation {
     UserMethods userMethods = new UserMethods();
     AuthMethods authMethods = new AuthMethods();
     Response response;
-    String authToken;
 
     @Step("Make login request <table>")
     public void login(Table table) {
@@ -30,17 +28,7 @@ public class StepImplementation {
 
     @Step("Create task that <table>")
     public void createTask(Table table) {
-        TaskCreateRequest createRequest = new TaskCreateRequest();
-
-        createRequest.setTitle(table.getColumnValues("title").get(0));
-        createRequest.setDescription(table.getColumnValues("description").get(0));
-        if (!table.getColumnValues("status").isEmpty()){
-            createRequest.setStatus(TaskStatus.valueOf(table.getColumnValues("status").get(0)));
-        }
-        if (!table.getColumnValues("assignedUserId").isEmpty()){
-            createRequest.setAssignedUserId(Integer.parseInt(table.getColumnValues("assignedUserId").get(0)));
-        }
-        response = taskMethods.createTask(createRequest);
+        response = taskMethods.createTask(table);
     }
 
     @Step("Response status code should be <statusCode>")
@@ -64,15 +52,8 @@ public class StepImplementation {
 
     @Step("Update task that <table>")
     public void updateTask(Table table) {
-        TaskUpdateRequest updateRequest = new TaskUpdateRequest();
 
-        updateRequest.setTitle(table.getColumnValues("title").get(0));
-        updateRequest.setDescription(table.getColumnValues("description").get(0));
-        updateRequest.setStatus(TaskStatus.valueOf(table.getColumnValues("status").get(0)));
-        if (!table.getColumnValues("assignedUserId").isEmpty()){
-            updateRequest.setAssignedUserId(Integer.parseInt(table.getColumnValues("assignedUserId").get(0)));
-        }
-        response = taskMethods.updateTask(Integer.parseInt(table.getColumnValues("id").get(0)), updateRequest);
+        response = taskMethods.updateTask(table);
     }
 
     @Step("Get task by id <id>")
@@ -87,10 +68,7 @@ public class StepImplementation {
 
     @Step("Patch task by id <table>")
     public void changeTaskStatusById(Table table){
-        TaskStatusUpdate taskStatusUpdate = new TaskStatusUpdate();
-        taskStatusUpdate.setTaskStatus(TaskStatus.valueOf(table.getColumnValues("status").get(0)));
-
-        response = taskMethods.updateTaskStatus(Integer.parseInt(table.getColumnValues("id").get(0)), taskStatusUpdate);
+        response = taskMethods.updateTaskStatus(table);
     }
 
     @Step("Create user that <table>")
@@ -104,11 +82,7 @@ public class StepImplementation {
 
     @Step("Update user that <table>")
     public void updateUser(Table table){
-        UserUpdateRequest userUpdateRequest = new UserUpdateRequest();
-        userUpdateRequest.setUsername(table.getColumnValues("username").get(0));
-        userUpdateRequest.setMail(table.getColumnValues("mail").get(0));
-        Integer id = Integer.parseInt(table.getColumnValues("id").get(0));
-        response = userMethods.updateUser(id, userUpdateRequest);
+        response = userMethods.updateUser(table);
     }
 
     @Step("Delete user by id <id>")
