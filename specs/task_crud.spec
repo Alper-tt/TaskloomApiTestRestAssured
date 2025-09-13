@@ -4,7 +4,9 @@ Created by alper on 8.09.2025
 
 This is an executable specification file which follows markdown syntax.
 Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-     
+## Auth Actions
+* Login with "taskloom" and "taskloompass"
+
 ## Task Create Actions
 * Create task with status
 * Create Task without status response should be TODO

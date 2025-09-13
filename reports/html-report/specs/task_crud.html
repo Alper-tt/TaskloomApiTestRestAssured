@@ -31,11 +31,11 @@
    
   <div class="report_chart">
     <div class="chart">
-      <svg id="pie-chart" data-results="2,1,0" data-total="3">
+      <svg id="pie-chart" data-results="0,3,0" data-total="3">
         <path class="status failed" />
-        <path class="shadow failed" data-status="failed"><title>Failed: 2/3</title></path>
+        <path class="shadow failed" data-status="failed"><title>Failed: 0/3</title></path>
         <path class="status passed" />
-        <path class="shadow passed" data-status="passed"><title>Passed: 1/3</title></path>
+        <path class="shadow passed" data-status="passed"><title>Passed: 3/3</title></path>
         <path class="status skipped" />
         <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/3</title></path>
       </svg>
@@ -46,14 +46,14 @@
   <div class="report_test-results">
     <div class="report_test-result specs">
         <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">3</span></div>
-        <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">2</span></div>
-        <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">1</span></div>
+        <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">0</span></div>
+        <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">3</span></div>
         <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
     </div>
     <div class="report_test-result scenarios">
-        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">11</span></div>
-        <div class="fail scenario-stats" data-status="failed"><span class="value">9</span></div>
-        <div class="pass scenario-stats" data-status="passed"><span class="value">2</span></div>
+        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">13</span></div>
+        <div class="fail scenario-stats" data-status="failed"><span class="value">0</span></div>
+        <div class="pass scenario-stats" data-status="passed"><span class="value">13</span></div>
         <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
     </div>
   </div>
@@ -68,15 +68,15 @@
     
     <li>
       <label>Success Rate </label>
-      <span>33%</span>
+      <span>100%</span>
     </li>
     <li>
       <label>Total Time </label>
-      <span>00:00:02</span>
+      <span>00:00:01</span>
     </li>
     <li>
       <label>Generated On </label>
-      <span>Sep 13, 2025 at 4:08pm</span>
+      <span>Sep 13, 2025 at 5:07pm</span>
     </li>
   </ul>
 
@@ -113,18 +113,9 @@
       <div id="listOfSpecifications">
         <ul id="scenarios" class="spec-list">
         
-          <a href="task_crud.html">
-            
-              <li class="failed spec-name">
-            
-              <span id="scenarioName" class="scenarioname">Task CRUD Actions</span>
-              <span id="time" class="time">00:00:00</span>
-            </li>
-          </a>
-          
           <a href="user_crud.html">
-            
-              <li class="failed spec-name">
+             
+              <li class="passed spec-name">
             
               <span id="scenarioName" class="scenarioname">User CRUD Actions</span>
               <span id="time" class="time">00:00:00</span>
@@ -136,6 +127,15 @@
               <li class="passed spec-name">
             
               <span id="scenarioName" class="scenarioname">Auth Actions</span>
+              <span id="time" class="time">00:00:00</span>
+            </li>
+          </a>
+          
+          <a href="task_crud.html">
+             
+              <li class="passed spec-name">
+            
+              <span id="scenarioName" class="scenarioname">Task CRUD Actions</span>
               <span id="time" class="time">00:00:00</span>
             </li>
           </a>
@@ -154,8 +154,8 @@
         <h3 class="spec-head" title="/Users/alper/Desktop/taskloom/taskloom-api-test/specs/task_crud.spec">Task CRUD Actions</h3>
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
-            <li class="fail"><span class="value">4</span><span class="txt">Failed</span></li>
-            <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
+            <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
+            <li class="pass"><span class="value">5</span><span class="txt">Passed</span></li>
             <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
@@ -200,7 +200,322 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       
         
 	
-  <div class="scenario-container failed">
+  <div class="scenario-container passed">
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Auth Actions</h3>
+    
+    <span class="time">00:00:00</span>
+
+	
+  
+
+	</div>
+  
+  
+
+  
+  
+
+  
+	
+
+  
+  
+    
+  
+    
+  
+  <div class="step concept">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  <i class="fa fa-plus-square" aria-hidden="true"></i>
+  
+  
+    
+      <span>
+        Login with 
+      </span>
+    
+  
+    
+      <span class="parameter">"taskloom"</span>
+    
+  
+    
+      <span>
+         and 
+      </span>
+    
+  
+    
+      <span class="parameter">"taskloompass"</span>
+    
+  
+  </div>
+
+  </li></ul></div></div>
+  <div class="concept-steps">
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Make login request 
+      </span>
+    
+  
+    
+      <div class="inline-table">
+        <div>
+          <table>
+  <tr>
+    <th>username</th><th>password</th>
+  </tr>
+  <tbody>
+    
+    <tr><td>taskloom</td><td>taskloompass</td></tr>
+    
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Response status code should be 
+      </span>
+    
+  
+    
+      <span class="parameter">"200"</span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span class="parameter">"tokenType"</span>
+    
+  
+    
+      <span>
+         should be 
+      </span>
+    
+  
+    
+      <span class="parameter">"Bearer"</span>
+    
+  
+    
+      <span>
+         in response
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  </div>
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+	
+	</div>
+
+      
+        
+	
+  <div class="scenario-container passed">
     
 
 	
@@ -235,7 +550,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -348,7 +663,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -379,28 +694,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   </div>
 
   
-    
-        
-  <div class="error-container failed">
-    <div class="exception-container">
-      <div class="exception">
-        <h4 class="error-message">
-          <pre>org.opentest4j.AssertionFailedError: expected: &lt;201&gt; but was: &lt;401&gt;</pre>
-        </h4>
-        <pre class="stacktrace">org.opentest4j.AssertionFailedError: expected: &lt;201&gt; but was: &lt;401&gt;<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)<br/>	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)<br/>	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:545)<br/>	at taskloom.steps.StepImplementation.checkStatusCode(StepImplementation.java:48)<br/>	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:565)<br/>	at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:66)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:59)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:41)<br/>	at com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:14)<br/>	at com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:33)<br/>	at com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:19)<br/>	at com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:44)<br/>	at com.thoughtworks.gauge.RunnerServiceHandler.lambda$executeStep$7(RunnerServiceHandler.java:166)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)<br/>	at java.base/java.lang.Thread.run(Thread.java:1447)<br/></pre>
-      </div>
-      
-         <div class="screenshot-container">
-          <div class="screenshot">
-            <a href="../images/screenshot-97af0458-104b-4654-9bff-e0fa65ea1e74.png" rel="lightbox">
-              <img src="../images/screenshot-97af0458-104b-4654-9bff-e0fa65ea1e74.png" class="screenshot-thumbnail" />
-            </a>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
     
     
   
@@ -437,7 +730,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -504,7 +797,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -581,7 +874,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -658,7 +951,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -740,7 +1033,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -772,7 +1065,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -853,7 +1146,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -920,7 +1213,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -987,7 +1280,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1064,7 +1357,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1141,7 +1434,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1223,7 +1516,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1255,7 +1548,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1336,7 +1629,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1408,7 +1701,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1440,7 +1733,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1521,7 +1814,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1597,7 +1890,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       
         
 	
-  <div class="scenario-container failed">
+  <div class="scenario-container passed">
     
 
 	
@@ -1632,7 +1925,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1731,7 +2024,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1762,28 +2055,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   </div>
 
   
-    
-        
-  <div class="error-container failed">
-    <div class="exception-container">
-      <div class="exception">
-        <h4 class="error-message">
-          <pre>org.opentest4j.AssertionFailedError: expected: &lt;204&gt; but was: &lt;401&gt;</pre>
-        </h4>
-        <pre class="stacktrace">org.opentest4j.AssertionFailedError: expected: &lt;204&gt; but was: &lt;401&gt;<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)<br/>	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)<br/>	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:545)<br/>	at taskloom.steps.StepImplementation.checkStatusCode(StepImplementation.java:48)<br/>	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:565)<br/>	at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:66)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:59)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:41)<br/>	at com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:14)<br/>	at com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:33)<br/>	at com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:19)<br/>	at com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:44)<br/>	at com.thoughtworks.gauge.RunnerServiceHandler.lambda$executeStep$7(RunnerServiceHandler.java:166)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)<br/>	at java.base/java.lang.Thread.run(Thread.java:1447)<br/></pre>
-      </div>
-      
-         <div class="screenshot-container">
-          <div class="screenshot">
-            <a href="../images/screenshot-4b16bfb1-5216-40a3-b53b-263f176cf4b4.png" rel="lightbox">
-              <img src="../images/screenshot-4b16bfb1-5216-40a3-b53b-263f176cf4b4.png" class="screenshot-thumbnail" />
-            </a>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
     
     
   
@@ -1820,7 +2091,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -1896,7 +2167,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       
         
 	
-  <div class="scenario-container failed">
+  <div class="scenario-container passed">
     
 
 	
@@ -1931,7 +2202,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2030,7 +2301,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2061,28 +2332,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   </div>
 
   
-    
-        
-  <div class="error-container failed">
-    <div class="exception-container">
-      <div class="exception">
-        <h4 class="error-message">
-          <pre>org.opentest4j.AssertionFailedError: expected: &lt;200&gt; but was: &lt;401&gt;</pre>
-        </h4>
-        <pre class="stacktrace">org.opentest4j.AssertionFailedError: expected: &lt;200&gt; but was: &lt;401&gt;<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)<br/>	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)<br/>	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:545)<br/>	at taskloom.steps.StepImplementation.checkStatusCode(StepImplementation.java:48)<br/>	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:565)<br/>	at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:66)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:59)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:41)<br/>	at com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:14)<br/>	at com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:33)<br/>	at com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:19)<br/>	at com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:44)<br/>	at com.thoughtworks.gauge.RunnerServiceHandler.lambda$executeStep$7(RunnerServiceHandler.java:166)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)<br/>	at java.base/java.lang.Thread.run(Thread.java:1447)<br/></pre>
-      </div>
-      
-         <div class="screenshot-container">
-          <div class="screenshot">
-            <a href="../images/screenshot-6393a0f7-fa7c-41e1-b42a-2b282efc36fb.png" rel="lightbox">
-              <img src="../images/screenshot-6393a0f7-fa7c-41e1-b42a-2b282efc36fb.png" class="screenshot-thumbnail" />
-            </a>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
     
     
   
@@ -2119,7 +2368,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2186,7 +2435,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2268,7 +2517,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2300,7 +2549,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2363,7 +2612,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2430,7 +2679,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2502,7 +2751,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2534,7 +2783,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2615,7 +2864,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2682,7 +2931,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2749,7 +2998,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2826,7 +3075,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -2912,7 +3161,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       
         
 	
-  <div class="scenario-container failed">
+  <div class="scenario-container passed">
     
 
 	
@@ -2947,7 +3196,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3060,7 +3309,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info failed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3091,28 +3340,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
   </div>
 
   
-    
-        
-  <div class="error-container failed">
-    <div class="exception-container">
-      <div class="exception">
-        <h4 class="error-message">
-          <pre>org.opentest4j.AssertionFailedError: expected: &lt;202&gt; but was: &lt;401&gt;</pre>
-        </h4>
-        <pre class="stacktrace">org.opentest4j.AssertionFailedError: expected: &lt;202&gt; but was: &lt;401&gt;<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)<br/>	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)<br/>	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)<br/>	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)<br/>	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:545)<br/>	at taskloom.steps.StepImplementation.checkStatusCode(StepImplementation.java:48)<br/>	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:565)<br/>	at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:66)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:59)<br/>	at com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:41)<br/>	at com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:14)<br/>	at com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:33)<br/>	at com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:19)<br/>	at com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:44)<br/>	at com.thoughtworks.gauge.RunnerServiceHandler.lambda$executeStep$7(RunnerServiceHandler.java:166)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)<br/>	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)<br/>	at java.base/java.lang.Thread.run(Thread.java:1447)<br/></pre>
-      </div>
-      
-         <div class="screenshot-container">
-          <div class="screenshot">
-            <a href="../images/screenshot-451f36ca-1e06-4793-aa8e-69a4b677081d.png" rel="lightbox">
-              <img src="../images/screenshot-451f36ca-1e06-4793-aa8e-69a4b677081d.png" class="screenshot-thumbnail" />
-            </a>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
     
     
   
@@ -3149,7 +3376,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3216,7 +3443,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3293,7 +3520,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3370,7 +3597,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3447,7 +3674,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3529,7 +3756,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3561,7 +3788,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3642,7 +3869,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3714,7 +3941,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3746,7 +3973,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3827,7 +4054,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3899,7 +4126,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -3931,7 +4158,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
@@ -4012,7 +4239,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info not-executed">
+  <div class="step-info passed">
   
   <ul>
     <li class="step">
