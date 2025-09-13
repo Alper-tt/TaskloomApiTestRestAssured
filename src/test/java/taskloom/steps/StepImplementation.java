@@ -16,6 +16,17 @@ public class StepImplementation {
     UserMethods userMethods = new UserMethods();
     AuthMethods authMethods = new AuthMethods();
     Response response;
+    String authToken;
+
+    @Step("Make login request <table>")
+    public void login(Table table) {
+        response = authMethods.login(table);
+    }
+
+    @Step("Make register request <table>")
+    public void register(Table table){
+        response = authMethods.register(table);
+    }
 
     @Step("Create task that <table>")
     public void createTask(Table table) {
@@ -128,15 +139,5 @@ public class StepImplementation {
     @Step("Get tasks of user by user id <id>")
     public void getTasksOfUserById(Integer id){
         response = userMethods.getTasksOfUserById(id);
-    }
-
-    @Step("Make login request <table>")
-    public void login(Table table) {
-        response = authMethods.login(table);
-    }
-
-    @Step("Make register request <table>")
-    public void register(Table table){
-        response = authMethods.register(table);
     }
 }

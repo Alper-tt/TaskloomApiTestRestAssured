@@ -2,6 +2,7 @@ package taskloom.hooks;
 
 import com.thoughtworks.gauge.*;
 import io.restassured.RestAssured;
+import taskloom.base.AuthContext;
 
 public class Hooks {
 
@@ -28,5 +29,6 @@ public class Hooks {
 
     @AfterSuite
     public void afterSuite() {
+        AuthContext.clear();
     }
 }

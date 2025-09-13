@@ -29,11 +29,17 @@ public class AuthMethods extends BaseTest{
                 table.getColumnValues("username").get(0),
                 table.getColumnValues("password").get(0)
         );
-        return given()
+
+        Response response = given()
                 .spec(requestSpec)
                 .contentType(ContentType.JSON)
                 .body(loginRequest)
                 .when()
                 .post("/auth/login");
+
+        String token = response.then().extract().path("accessToken");
+        AuthContext.setToken(token);
+
+        return response;
     }
 }

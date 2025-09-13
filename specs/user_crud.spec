@@ -4,7 +4,7 @@ Created by alper on 8.09.2025
 
 This is an executable specification file which follows markdown syntax.
 Every heading in this file denotes a scenario. Every bulleted point denotes a step.
-     
+
 ## User Create Actions
 * Create user with valid arguments
 * Create user with invalid username

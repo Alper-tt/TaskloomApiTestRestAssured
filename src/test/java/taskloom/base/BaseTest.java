@@ -16,7 +16,10 @@ public class BaseTest {
     RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("http://localhost:8080")
             .setAccept("application/json")
-            .addFilters(Arrays.asList(new RequestLoggingFilter(), new ResponseLoggingFilter()))
+            .addFilters(Arrays.asList(
+                    new RequestLoggingFilter(),
+                    new ResponseLoggingFilter(),
+                    new AuthFilter()))
             .build();
     ResponseSpecification responseSpec = new ResponseSpecBuilder()
             .expectResponseTime(lessThan(2000L))
